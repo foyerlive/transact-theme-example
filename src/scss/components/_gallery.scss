@@ -1,0 +1,48 @@
+.gallery-container {
+  flex-grow: 1;
+  //background-color: yellow;
+  //padding-bottom: 85%;
+
+  /* MAIN IMAGE */
+  .gallery-items {
+    height: calc( 100% - 6rem );
+  }
+
+  /* ARROWS */
+  .gallery-btn-prev,.gallery-btn-next {
+    &:before {
+      color: #333333;
+      font-size: 4.5rem;
+    }
+  }
+
+  /* PAGINATION */
+  .gallery-pagination {
+    display: none;
+  }
+
+  /* PREVIEWS */
+  .gallery-previews {
+    left: 0;
+    bottom: 1rem;
+    width: 100%;
+    height: inherit;
+    flex-flow: row;
+
+    .gallery-preview-item {
+      margin: 1rem;
+      width: 4rem;
+      height: 4rem;
+      &:before {
+        border: 3px solid transparent;
+      }
+    }
+    .gallery-preview-item-active {
+      &:before {
+        border: 3px solid #e1e1e3;
+      }
+    }
+
+  }
+
+}

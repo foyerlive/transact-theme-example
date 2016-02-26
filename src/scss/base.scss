@@ -1,0 +1,41 @@
+@import 'vars';
+@import 'fonts';
+
+@import 'containers/index';
+@import 'containers/productList';
+@import 'containers/home';
+@import 'containers/pathway';
+@import 'containers/product';
+
+@import 'components/gallery';
+@import 'components/layout/logo';
+@import 'components/layout/header';
+@import 'components/layout/footer';
+@import 'components/layout/help';
+//@import 'components/productListItem';
+//
+
+html {
+  font-size: 75%;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #3d3b3b;
+}
+
+@media all and (orientation: portrait) and (min-width:1080px) {
+  html {
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
+@media all and (orientation: landscape) and (min-width:1920px) {
+  html {
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
+
+/* Remove highlight on touch */
+a:active {
+  background: none;
+}

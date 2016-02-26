@@ -1,0 +1,45 @@
+.footer-component {
+  background-color: $background-dark;
+  color: white;
+  height: calc( 1rem / 18 * 60 );
+  min-height: calc( 1rem / 18 * 60 );
+}
+
+.footer-wrapper {
+
+  font-size: 20px;
+  //padding-top: 3px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-grow: 1;
+  flex-flow: row;
+  justify-content: space-between;
+  //background-image: url( '../assets/images/grain.png' );
+  //text-transform: uppercase;
+  //line-height: 3rem;
+
+  .footer-left {
+    padding-left: 0.75rem;
+
+    display: flex;
+    //align-content: stretch;
+    //align-items: stretch;
+
+    .button {
+      color: white;
+    }
+    .breadcrumbs-container {
+      display: flex;
+      align-items: center;
+    }
+
+  }
+  .footer-right {
+    padding-right: 0.75rem;
+    display: flex;
+    align-items: center;
+  }
+
+
+}

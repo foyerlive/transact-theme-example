@@ -1,0 +1,40 @@
+/*
+Please use the Optima font for titles, CTA and body copy
+*/
+@each $font-face in
+        tungsten-medium
+        tungsten-light
+        gothamBook
+        gothamBold
+        GothamBoldCondensed
+        icon
+
+{
+
+  @font-face {
+    font-family: quote($font-face);
+    src:  url('../assets/fonts/#{$font-face}.woff');
+    font-weight: normal;
+    font-style:  normal;
+    font-stretch: normal;
+  }
+}
+
+html {
+  font-family: gothamBook, "Courier New";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.button-find {
+  font-style: normal;
+  font-weight: 700;
+}
+
+h1 {
+  color: $color-highlight;
+  text-transform: uppercase;
+  font-family: tungsten-light;
+  font-size: 5rem;
+  line-height: 5.5rem;
+}
