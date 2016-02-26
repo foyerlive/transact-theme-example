@@ -51,8 +51,7 @@ const productContainerStructure = {
           className: 'product-content-left',
           children: [
             'sku',
-            'features',
-            <Renderer/>
+            'features'
           ]
         },
         {
