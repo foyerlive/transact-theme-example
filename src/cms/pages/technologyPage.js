@@ -3,7 +3,7 @@ const testStructure = {
   className: 'bob rules',
   children: [
     "hello",
-    "<b>BOLD</b>"
+    "<b>BOLHDSfkhs dhkfs hjkdfk hjsdfhkjshkdjf D</b>"
 
   ]
 };
