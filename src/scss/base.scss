@@ -7,6 +7,9 @@
 @import 'containers/pathway';
 @import 'containers/product';
 
+//CMS
+@import 'containers/cms/techPage';
+
 @import 'components/gallery';
 @import 'components/layout/logo';
 @import 'components/layout/header';
@@ -14,6 +17,7 @@
 @import 'components/layout/help';
 //@import 'components/productListItem';
 //
+
 
 html {
   font-size: 75%;

@@ -5,7 +5,12 @@ const welcomeStructure = {
     '<li>See product details and reviews.</li>',
     '<li>Have items delivered to this store or directly to your home.</li>',
     'start',
-    '<a href="#/interact/cms/technology">About our Orthaheel technology</a>'
+    {
+      className: 'techLink',
+      children: [
+        '<a href="#/interact/cms/technology">About our Orthaheel technology ></a>'
+      ]
+    }
 
   ]
 };
