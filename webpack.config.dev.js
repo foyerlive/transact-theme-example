@@ -1,21 +1,22 @@
+var foyerHost = process.env.foyerHost || 'localhost.foyerlive.com';
 var webpack = require('webpack');
 var fs = require('fs');
 var packageContents = fs.readFileSync('./package.json', 'utf8');
 var packageObject = JSON.parse( packageContents );
-console.log( 'Starting DEV webpack for %s - %s', packageObject.name, packageObject.version );
+console.log( 'Starting DEV webpack for %s - %s @ %s', packageObject.name, packageObject.version, foyerHost );
 
 module.exports = {
   //devtool: 'cheap-module-eval-source-map',
   entry: {
     theme: [
-      'webpack-hot-middleware/client?path=http://internal.foyerlive.com:9082/__webpack_hmr',
+      'webpack-hot-middleware/client?path=//'+foyerHost+':9082/__webpack_hmr',
       './src/',
     ]
   },
   output: {
     path: __dirname + '/dist/',
     filename: '[name].js',
-    publicPath: 'http://internal.foyerlive.com:9082/'
+    publicPath: 'http://'+foyerHost+':9082/'
   },
   //externals: {
   //  "react": "React",

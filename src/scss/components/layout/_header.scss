@@ -12,7 +12,8 @@
 
 
   color: white;
-
+  font-family: tungsten-medium;
+  text-transform: uppercase;
   font-size: calc( 1rem / 18 * 32 );
 
   .button {
@@ -39,7 +40,12 @@
   }
 
   .button-search {
-    //border-left: 1px solid #E5E5E5;
+    &:before {
+      margin-bottom: calc( 1rem / 18 * 2 );
+      font-family: 'simple-line-icons';
+      content: '\e090';
+      padding-right: calc( 1rem / 18 * 20 );
+    }
   }
 
 }

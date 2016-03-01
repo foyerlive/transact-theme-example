@@ -1,3 +1,6 @@
+import React from 'react';
+import { Route, Link } from 'react-router';
+
 const welcomeStructure = {
   children: [
     '<h1>Shop the full line of Vionic products.</h1>',
@@ -8,7 +11,7 @@ const welcomeStructure = {
     {
       className: 'techLink',
       children: [
-        '<a href="#/interact/cms/technology">About our Orthaheel technology ></a>'
+        <Link to="/interact/cms/technology">About our Orthaheel technology ></Link>
       ]
     }
 

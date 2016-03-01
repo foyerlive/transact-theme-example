@@ -1,6 +1,8 @@
 .footer-component {
   background-color: $background-dark;
   color: white;
+  font-family: tungsten-medium;
+  text-transform: uppercase;
   height: calc( 1rem / 18 * 60 );
   min-height: calc( 1rem / 18 * 60 );
 }

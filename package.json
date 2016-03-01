@@ -29,6 +29,8 @@
   "homepage": "https://github.com/foyerlive/transact-theme-vionic#readme",
   "dependencies": {
     "boilerplate-preset": "github:foyerlive/boilerplate-preset",
-    "fl-cli": "github:foyerlive/fl-cli"
+    "fl-cli": "github:foyerlive/fl-cli",
+    "history": "^1.17.0",
+    "react-router": "^1.0.3"
   }
 }

@@ -26,7 +26,6 @@ $marginAmount: 0rem; // This value is the distance between each item and around 
     }
 
   }
-  border-top: 1px solid #ededed;
 
   .product-list-item {
     font-size: 15px;
@@ -38,24 +37,24 @@ $marginAmount: 0rem; // This value is the distance between each item and around 
       border-right-width: 0px;
     }
     .product-name {
-      display: none;
+      font-size: 1rem;
+      text-align: center;
+      color: $color-title;
     }
     .product-sku {
       display: none;
     }
     .product-price {
-      &:before {
-        content: 'A';
-      }
+      //display: none;
       text-align: center;
-      color: #7e7e7e;
+      color: $color-default;
     }
   }
 }
 
 /* PORTRAIT OVERRIDES */
 @media all and (orientation: portrait) {
-  $cols: 4; // Number of columns
+  $cols: 3; // Number of columns
   $marginAmount: 0rem; // This value is the distance between each item and around the items..
 
   .product-list-container {

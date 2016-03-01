@@ -1,0 +1,32 @@
+.pathway-filter-title-item {
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-image: url( '../assets/images/shop-gender.jpg');
+  padding-top: 504px;
+  display: block;
+
+  &.pathway-filter-title-applied-category-men {
+    background-image: url( '../assets/images/shop-mens.jpg');
+  }
+
+  &.pathway-filter-title-applied-category-women {
+    background-image: url( '../assets/images/shop-womens.jpg');
+  }
+
+}
+
+.pathway-container-buttons-buttonlist {
+  padding: 3rem;
+
+  div {
+    margin-top: 3rem;
+    flex-basis: 100%;
+    padding: 4rem;
+    text-align: center;
+    background-color: #c0b8b0;
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+}

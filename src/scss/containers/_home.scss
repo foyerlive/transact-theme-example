@@ -5,13 +5,14 @@
   background-size: 100% auto;
   display: flex;
   flex-flow: column;
-  //justify-content: center;
+  justify-content: center;
   padding: 4rem;
-  padding-top: 60%;
+  padding-top: 24rem;
 
   h1 {
     display: inline-block;
-    max-width: 50%;
+    max-width: 60%;
+    font-size: 6rem;
   }
 
   li {
