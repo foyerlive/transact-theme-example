@@ -44,7 +44,13 @@ $marginAmount: 0rem; // This value is the distance between each item and around 
     .product-sku {
       display: none;
     }
+    .product-price-container {
+      text-align: center;
+    }
     .product-price {
+      &:before {
+        content: '$';
+      }
       //display: none;
       text-align: center;
       color: $color-default;
