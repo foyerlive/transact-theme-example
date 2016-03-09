@@ -1,5 +1,7 @@
 import React, {PropTypes,Component} from 'react';
 
+let image = require('../../assets/images/pages/poster.png' );
+
 const testStructure = {
   className: 'techPage',
   children: [
@@ -9,7 +11,7 @@ const testStructure = {
         width="1080"
         height="608"
         src="https://s3-us-west-1.amazonaws.com/assets.foyerlive.com/manual/vionic/vionic_tech_video.webm"
-        poster="https://s3-us-west-1.amazonaws.com/assets.foyerlive.com/manual/vionic/thumb_vionic_tech_video-manual.png"
+        poster={image}
         preload="auto"
         controls="1"/>
       <div className="vionicTechnology"></div>
