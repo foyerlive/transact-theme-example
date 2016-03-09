@@ -1,7 +1,7 @@
 .gallery-container {
   flex-grow: 1;
   //background-color: yellow;
-  //padding-bottom: 85%;
+  padding-bottom: 65%;
 
   /* MAIN IMAGE */
   .gallery-items {
@@ -11,8 +11,19 @@
   /* ARROWS */
   .gallery-btn-prev,.gallery-btn-next {
     &:before {
-      color: #333333;
-      font-size: 4.5rem;
+      font-family: simple-line-icons;
+      color: $color-light;
+      font-size: 4rem;
+    }
+  }
+  .gallery-btn-prev {
+    &:before {
+      content: "\E605";
+    }
+  }
+  .gallery-btn-next {
+    &:before {
+      content: "\E606";
     }
   }
 

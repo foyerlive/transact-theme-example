@@ -41,6 +41,16 @@
     padding-right: 0.75rem;
     display: flex;
     align-items: center;
+
+    .button-help {
+      &:before {
+        content: 'Need ';
+      }
+      &:after {
+        content: '?';
+      }
+    }
+
   }
 
 

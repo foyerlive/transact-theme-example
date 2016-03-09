@@ -1,0 +1,7 @@
+.breadcrumbs-container {
+  .crumb-product {
+    &:before {
+      content: 'SKU ';
+    }
+  }
+}

@@ -8,7 +8,7 @@ import technologyPage from './pages/technologyPage';
 
 const cms = {
   indexContainerStructure: indexContainerStructure,
-//  productContainerStructure: productContainerStructure,
+  productContainerStructure: productContainerStructure,
   homeContainerStructure: homeContainerStructure,
   pages: {
     technology: technologyPage

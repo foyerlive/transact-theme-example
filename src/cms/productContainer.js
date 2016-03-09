@@ -1,4 +1,5 @@
 import React, {PropTypes,Component} from 'react';
+import cx from 'classnames';
 
 class Renderer extends Component
 {
@@ -33,35 +34,51 @@ class Renderer extends Component
   }
 }
 
+class Tabs extends Component
+{
+  render() {
+    const Product = this.props.product;
+
+    return (
+      <div className="tab-container">
+        <div className="tabs">
+          <input id="tab-one" type="radio" name="grp" defaultChecked/>
+          <label htmlFor="tab-one">Features</label>
+          <div className={cx('tab-content','tab-content-features',Product.hasOwnProperty('apma') && Product.apma === 'Yes' ? 'tab-content-apma' : '')} dangerouslySetInnerHTML={{__html:Product.features}}></div>
+
+          <input id="tab-two" type="radio" name="grp" />
+          <label htmlFor="tab-two">Sizing</label>
+          <div className="tab-content" dangerouslySetInnerHTML={{__html:Product.sizingchart}}></div>
+
+          <input id="tab-three" type="radio" name="grp" />
+          <label htmlFor="tab-three">Care</label>
+          <div className="tab-content" dangerouslySetInnerHTML={{__html:Product.care}}></div>
+        </div>
+      </div>
+    )
+  }
+}
+
 
 const productContainerStructure = {
-  className: 'product-container-landscape',
+  className: 'product-container-portrait',
   children: [
     {
-      className: 'product-content-title',
-      children: [
-        'name',
-        'price'
-      ]
-    },
-    {
-      className: 'product-content-main',
+      className: 'product-content',
       children: [
         {
-          className: 'product-content-left',
+          className: 'product-content-title',
           children: [
+            'name',
+            'price',
             'sku',
-            'features'
-          ]
-        },
-        {
-          className: 'product-content-right',
-          children: [
             'gallery'
           ]
-        }
+        },
+        <Tabs/>
       ]
-    }
+    },
+    'checkout'
   ]
 };
 

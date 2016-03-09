@@ -31,30 +31,33 @@ $marginAmount: 0rem; // This value is the distance between each item and around 
     font-size: 15px;
     margin-bottom: 0px;
     padding: 1rem;
-    border-right: 1px solid #ededed;
-    border-bottom: 1px solid #ededed;
+    //border-right: 1px solid #ededed;
+    //border-bottom: 1px solid #ededed;
+
     &:nth-child(#{$colsLandscape}n) {
       border-right-width: 0px;
     }
     .product-name {
+      font-family: gothamBook;
       font-size: 1rem;
       text-align: center;
       color: $color-title;
+      text-transform: uppercase;
     }
     .product-sku {
       display: none;
     }
     .product-price-container {
-      text-align: center;
+      display: none;
     }
-    .product-price {
-      &:before {
-        content: '$';
-      }
-      //display: none;
-      text-align: center;
-      color: $color-default;
-    }
+    //.product-price {
+    //  &:before {
+    //    content: '$';
+    //  }
+    //  //display: none;
+    //  text-align: center;
+    //  color: $color-default;
+    //}
   }
 }
 
