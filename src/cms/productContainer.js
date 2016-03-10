@@ -71,10 +71,10 @@ const productContainerStructure = {
           children: [
             'name',
             'price',
-            'sku',
-            'gallery'
+            'sku'
           ]
         },
+        'gallery',
         <Tabs/>
       ]
     },

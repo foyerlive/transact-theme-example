@@ -1,0 +1,22 @@
+.keypad-component { // The keypad compoennt
+  .keypad-input-wrapper { // Wrapper around the number display
+    .keypad-phone-input { // Actual input
+      color: white;
+      background-color: $background-medium;
+    }
+  }
+  .keypad-message { // Used for minor messages
+
+  }
+  .keypad-wrapper { // Wrapper around the keypad
+    .keypad-container { // Numbers container
+      .button { // Keypad button
+        margin-right: 2px;
+        margin-bottom: 2px;
+        border-radius: 4px;
+        color: white;
+        background-color: $background-medium;
+      }
+    }
+  }
+}

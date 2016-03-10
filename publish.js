@@ -27,7 +27,7 @@ form.append('filename', file.substring( 7 ));
 var headers = {
   'Accept': 'application/json',
   'Content-Type': form.getHeaders()['content-type'],
-  'Authorization': '141960037656aab6767bf483.77365968'
+  'Authorization': '169303697562e4d22648017.89273466'
 };
 
 fetch('http://internal.foyerlive.com:9030/api/app/publishTheme', {

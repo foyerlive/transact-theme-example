@@ -29,11 +29,12 @@
 
   /* PAGINATION */
   .gallery-pagination {
-    display: none;
+    display: flex;
   }
 
   /* PREVIEWS */
   .gallery-previews {
+    display: none;
     left: 0;
     bottom: 1rem;
     width: 100%;
