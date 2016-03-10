@@ -1,5 +1,5 @@
 .product-checkout-container {
-  padding: 1rem;
+  padding: 2rem 1rem 1rem 1rem;
   background-color: $color-light;
 
 
@@ -50,19 +50,25 @@
       &.disabled {
         color: $color-light;
         background-color: $background-medium;
-        &:after {
-          position: absolute;
-          font-size: 1rem;
-          font-style: italic;
-          left: 0;
-          //bottom: 0;
-          width: 100%;
-          display: flex;
-          align-items: flex-end;
-          justify-content: center;
-//          text-align: center;
-          text-transform: none;
-          content: '(Please be sure to select all options above to continue.)'
+      }
+    }
+    &.continue-configure {
+      .button {
+        &.disabled {
+          &:after {
+            position: absolute;
+            font-size: 1rem;
+            font-style: italic;
+            left: 0;
+            //bottom: 0;
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            //          text-align: center;
+            text-transform: none;
+            content: '(Please be sure to select all options above to continue.)'
+          }
         }
       }
     }
