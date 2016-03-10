@@ -17,16 +17,39 @@
 }
 
 .pathway-container-buttons-buttonlist {
-  padding: 3rem;
+  padding: 2rem;
+  padding-top: 0;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
 
   div {
-    margin-top: 3rem;
+    box-sizing: border-box;
+    flex-grow: 1;
+    flex-shrink: 0;
+    line-height: 4rem;
+    //margin: 2rem;
+    margin-top: 2rem;
+    &:first-child {
+      margin-top: 0rem;
+    }
     flex-basis: 100%;
-    padding: 4rem;
+    padding: 1rem;
     text-align: center;
     background-color: #c0b8b0;
     color: white;
     font-size: 2rem;
     text-transform: uppercase;
+    border-radius: 4px;
   }
+
+  &.pathway-container-buttons-category2 {
+    padding: 1rem;
+    div {
+      margin-top: 0;
+      margin: 1rem;
+      flex-basis: 40%;
+    }
+  }
+
 }
