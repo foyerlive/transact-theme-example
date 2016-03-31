@@ -1,0 +1,14 @@
+.container {
+  position: relative;
+  display: inline-block;
+}
+.base {
+  color: #d2d2d2;
+}
+.cover {
+  position: absolute;
+  color: #ff6600;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}

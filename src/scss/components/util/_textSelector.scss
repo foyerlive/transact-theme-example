@@ -1,0 +1,30 @@
+.selectorContainer {
+  dislay: flex;
+  flex-flow: column;
+}
+
+.selectorOptionsContainer {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.selectorLabel {
+  font-weight: bold;
+}
+
+.selectorOption {
+  font-weight: bold;
+  margin: 1px;
+  background-color: #f7f7f7;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.selectedOption {
+  color: white;
+  background-color: black;
+}
+
+.disabledOption {
+  color: #b7b7b7;
+}

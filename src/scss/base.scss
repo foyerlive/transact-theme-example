@@ -1,36 +1,57 @@
-@import 'vars';
+/*==========================================================================
+   Base SCSS file
+==========================================================================*/
+
+// --------- Base Settings --------- //
+
+@import 'variables';
 @import 'fonts';
 
-@import 'containers/index';
-@import 'containers/search';
-@import 'containers/productList';
+// --------- Components --------- //
+
+@import 'components/breadcrumbs';
+@import 'components/gallery';
+@import 'components/inlineFilters';
+@import 'components/productListItem';
+
+@import 'components/layout/footer';
+@import 'components/layout/header';
+@import 'components/layout/logo';
+@import 'components/layout/help';
+@import 'components/layout/tabs';
+
+@import 'components/product/orderButton';
+@import 'components/product/selector';
+
+@import 'components/util/button';
+@import 'components/util/image';
+@import 'components/util/keyboard';
+@import 'components/util/keypad';
+@import 'components/util/rating';
+@import 'components/util/textSelector';
+
+// --------- Containers --------- //
+
+// Custom CMS pages
+@import 'containers/cms/techPage';
+
+@import 'containers/cart';
+@import 'containers/checkoutText';
 @import 'containers/home';
+@import 'containers/index';
 @import 'containers/pathway';
 @import 'containers/product';
 @import 'containers/productConfigure';
-@import 'containers/checkoutText';
+@import 'containers/productList';
+@import 'containers/search';
+@import 'containers/transition';
 
-//CMS
-@import 'containers/cms/techPage';
-
-@import 'components/gallery';
-@import 'components/breadcrumbs';
-@import 'components/layout/logo';
-@import 'components/layout/header';
-@import 'components/layout/footer';
-@import 'components/layout/help';
-@import 'components/layout/tabs';
-@import 'components/util/keyboard';
-@import 'components/util/keypad';
-//@import 'components/productListItem';
-//
 
 
 html {
   font-size: 75%;
   line-height: 150%;
-  //letter-spacing: 0.01em;
-  color: #3d3b3b;
+  color: $default-font-color;
 }
 
 @media all and (orientation: portrait) and (min-width:1080px) {
@@ -39,6 +60,7 @@ html {
     line-height: 150%;
   }
 }
+
 @media all and (orientation: landscape) and (min-width:1920px) {
   html {
     font-size: 18px;
@@ -46,7 +68,7 @@ html {
   }
 }
 
-/* Remove highlight on touch */
+// Remove highlight on touch
 a:active {
   background: none;
 }
