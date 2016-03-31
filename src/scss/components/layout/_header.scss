@@ -1,51 +1,50 @@
+/*==========================================================================
+   Header Component
+==========================================================================*/
+
 .header-component {
-  height: calc( 1rem / 18 * 124 );
-  min-height: calc( 1rem / 18 * 124 );
-
-  background-color: #383330;
-
-  // Add the logo
-  background-image: url( '../assets/images/vionic_logo_white.png' );
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: auto 35%;
-
-
-  color: white;
-  font-family: tungsten-medium;
-  text-transform: uppercase;
-  font-size: calc( 1rem / 18 * 32 );
-
-  .button {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    height: calc(1rem / 18 * 124);
+    min-height: calc(1rem / 18 * 124);
+    background-color: #383330;
     color: white;
+    font-family: tungsten-medium;
+    text-transform: uppercase;
+    font-size: calc( 1rem / 18 * 32 );
 
-    // Center the text vertically...
-    display: flex;
-    align-items: center;
-  }
+    // Add the logo
+    background-image: url('../assets/images/foyerlive-logo.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 55%;
 
-  .button-back {
-    //border-right: 1px solid #E5E5E5;
-    //padding-top: calc( 1rem / 18 * 10 );
-    &:before {
-      margin-bottom: calc( 1rem / 18 * 2 );
-      font-size: calc( 1rem / 18 * 40 );
-      font-weight: normal;
-      font-family: FontAwesome;
-      content: '\f104';
-      padding-right: calc( 1rem / 18 * 20 );
+    // --------- Back & Search button styling --------- //
+
+    .button {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        color: white;
+        // Center the text vertically...
+        display: flex;
+        align-items: center;
     }
-  }
 
-  .button-search {
-    &:before {
-      margin-bottom: calc( 1rem / 18 * 2 );
-      font-family: 'simple-line-icons';
-      content: '\e090';
-      padding-right: calc( 1rem / 18 * 20 );
+    .button-back {
+        &:before {
+            margin-bottom: calc( 1rem / 18 * 2 );
+            font-size: calc( 1rem / 18 * 40 );
+            font-weight: normal;
+            font-family: FontAwesome;
+            content: '\f104';
+            padding-right: calc( 1rem / 18 * 20 );
+        }
     }
-  }
 
+    .button-search {
+        &:before {
+            margin-bottom: calc( 1rem / 18 * 2 );
+            font-family: 'simple-line-icons';
+            content: '\e090';
+            padding-right: calc( 1rem / 18 * 20 );
+        }
+    }
 }

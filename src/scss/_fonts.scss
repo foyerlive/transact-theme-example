@@ -1,48 +1,65 @@
-/*
-Please use the Optima font for titles, CTA and body copy
-*/
-@each $font-face in
-        tungsten-medium
-        tungsten-light
-        gothamBook
-        gothamBold
-        GothamBoldCondensed
-        icon
+/*==========================================================================
+   Font settings
+==========================================================================*/
 
-{
+// --------- Import custom fonts --------- //
 
-  @font-face {
-    font-family: quote($font-face);
-    src:  url('../assets/fonts/#{$font-face}.woff');
-    font-weight: normal;
-    font-style:  normal;
-    font-stretch: normal;
-  }
+@each $font-face in tungsten-medium tungsten-light gothamBook gothamBold GothamBoldCondensed icon {
+    @font-face {
+        font-family: quote($font-face);
+        src:  url('../assets/fonts/#{$font-face}.woff');
+        font-weight: normal;
+        font-style:  normal;
+        font-stretch: normal;
+    }
 }
+
+// --------- Set default fonts --------- //
 
 html {
-  font-family: gothamBook, "Courier New";
-  font-style: normal;
-  font-weight: normal;
+    font-size: $font-size-base;
+    line-height: $line-height-default;
+    color: $font-color-default;
+    font-family: $font-body, "Courier New";
+    font-style: normal;
+    font-weight: normal;
 }
 
-.button-find {
-  font-style: normal;
-  font-weight: 700;
+// --------- Orientation font-size adjustments --------- //
+
+@media all and (orientation: portrait) and (min-width: 1080px) {
+    html {
+        font-size: $font-size-default;
+        line-height: $line-height-default;
+    }
 }
+
+@media all and (orientation: landscape) and (min-width: 1920px) {
+    html {
+        font-size: $font-size-default;
+        line-height: $line-height-default;
+    }
+}
+
+// --------- Typography --------- //
 
 h1 {
-  color: $color-highlight;
-  text-transform: uppercase;
-  font-family: tungsten-light;
-  font-size: 5rem;
-  line-height: 5.5rem;
+    color: $color-highlight;
+    text-transform: uppercase;
+    font-family: $font-title;
+    font-size: 5rem;
+    line-height: 5.5rem;
 }
 
 h2 {
-  color: $color-highlight;
-  text-transform: uppercase;
-  font-family: tungsten-light;
-  font-size: 4rem;
-  line-height: 4.5rem;
+    color: $color-highlight;
+    text-transform: uppercase;
+    font-family: $font-title;
+    font-size: 4rem;
+    line-height: 4.5rem;
+}
+
+// Remove highlight on touch
+a:active {
+    background: none;
 }

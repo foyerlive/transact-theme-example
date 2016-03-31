@@ -1,3 +1,9 @@
+/*==========================================================================
+   Index container
+
+   The inner container, nested in between the header and footer components
+==========================================================================*/
+
 .index-page-container {
-  background-color: white;
+    background-color: $background-color-default;
 }

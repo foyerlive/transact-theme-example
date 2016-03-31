@@ -1,5 +1,7 @@
 /*==========================================================================
-   Base SCSS file
+   Base SASS file
+
+   Used only to import SCSS files
 ==========================================================================*/
 
 // --------- Base Settings --------- //
@@ -32,9 +34,6 @@
 
 // --------- Containers --------- //
 
-// Custom CMS pages
-@import 'containers/cms/techPage';
-
 @import 'containers/cart';
 @import 'containers/checkoutText';
 @import 'containers/home';
@@ -46,29 +45,6 @@
 @import 'containers/search';
 @import 'containers/transition';
 
+// --------- Custom CMS Pages --------- //
 
-
-html {
-  font-size: 75%;
-  line-height: 150%;
-  color: $default-font-color;
-}
-
-@media all and (orientation: portrait) and (min-width:1080px) {
-  html {
-    font-size: 18px;
-    line-height: 150%;
-  }
-}
-
-@media all and (orientation: landscape) and (min-width:1920px) {
-  html {
-    font-size: 18px;
-    line-height: 150%;
-  }
-}
-
-// Remove highlight on touch
-a:active {
-  background: none;
-}
+@import 'containers/cms/techPage';
