@@ -18,14 +18,13 @@ Run the project
 $ npm start
 ```
 
-Open Google Chome and visit [http://developer.foyerlive.com/#/dev](http://developer.foyerlive.com/#/dev)
+Open Google Chome and visit [http://developer.foyerlive.com/#/dev](http://developer.foyerlive.com/#/dev).
 
-As FoyerLive is designed to display in 1080p resolution, it is recommended you set the viewport dimensions to 1080 x 1920.
+FoyerLive is designed for 1080p, so we recommended you set your viewport dimensions to 1080 x 1920 when developing.
 
-## Styling guide
+## Customising your theme
 
-Each component and container within FoyerLive Transact can be overridden using CSS. The default theme ships with all selectors nested in their heirachy, however the inclusion of each SASS file is optional.
- When they are not present, default styles will be loaded.
+Themes are constructed of nested components and containers, which are easily customised using SASS.
 
 ### Components
 

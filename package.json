@@ -1,7 +1,7 @@
 {
-  "name": "transact-theme-vionic",
+  "name": "transact-theme-example",
   "version": "1.0.1",
-  "description": "Vionic theme for FoyerLive transact application",
+  "description": "Example theme for FoyerLive transact application",
   "scripts": {
     "clean": "rimraf dist",
     "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/foyerlive/transact-theme-vionic.git"
+    "url": "git+https://github.com/foyerlive/transact-theme-example.git"
   },
   "keywords": [
     "foyerlive",
@@ -21,12 +21,12 @@
     "present",
     "presentation"
   ],
-  "author": "James Turle <james@foyerlive.com> (http://github.com/jturle)",
+  "author": "Richard Green <rg@ie.com.au> (http://github.com/jturle)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/foyerlive/transact-theme-vionic/issues"
+    "url": "https://github.com/foyerlive/transact-theme-example/issues"
   },
-  "homepage": "https://github.com/foyerlive/transact-theme-vionic#readme",
+  "homepage": "https://github.com/foyerlive/transact-theme-example#readme",
   "dependencies": {
     "boilerplate-preset": "github:foyerlive/boilerplate-preset",
     "fl-cli": "github:foyerlive/fl-cli",

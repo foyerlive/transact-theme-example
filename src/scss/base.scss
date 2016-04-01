@@ -17,7 +17,6 @@
 
 @import 'components/layout/footer';
 @import 'components/layout/header';
-@import 'components/layout/logo';
 @import 'components/layout/help';
 @import 'components/layout/tabs';
 
@@ -47,3 +46,12 @@
 // --------- Custom CMS Pages --------- //
 
 @import 'containers/cms/techPage';
+
+
+// Check out our examples...
+@import 'examples/basicheader/index'; // - Basic Header
+@import 'examples/basicfooter/index'; // - Basic Footer
+
+
+// @import 'examples/fatfooter/index'; // - Having fat footer
+//@import 'examples/animatedheader'; - Animated Header Banner

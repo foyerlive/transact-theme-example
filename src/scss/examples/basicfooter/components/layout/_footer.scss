@@ -1,0 +1,45 @@
+.footer-component {
+    background-color: $background-color-footer;
+    color: white;
+    padding: calc(1rem / 18 * 30) 0; ///  Adjust the height of the footer.
+
+    .footer-wrapper {
+        font-size: calc(1rem / 18 * 20);
+        padding-left: calc(1rem / 18 * 10);
+        padding-right: calc(1rem / 18 * 10);
+        display: flex;
+        flex-grow: 1;
+        flex-flow: row;
+        justify-content: space-between;
+
+        .footer-left {
+            padding-left: 0.75rem;
+            display: flex;
+
+            .button {
+                color: white;
+            }
+
+            .breadcrumbs-container {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .footer-right {
+            padding-right: 0.75rem;
+            display: flex;
+            align-items: center;
+
+            .button-help {
+                &:before {
+                    content: 'Need ';
+                }
+
+                &:after {
+                    content: '?';
+                }
+            }
+        }
+    }
+}

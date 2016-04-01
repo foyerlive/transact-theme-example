@@ -1,0 +1,44 @@
+/*==========================================================================
+   Pathway container
+
+   # Category and sub-category pages
+==========================================================================*/
+
+.pathway-container {
+
+    .pathway-container-buttons-buttonlist {
+        padding: 0 calc(1rem / 18 * 50) calc(1rem / 18 * 50);
+        justify-content: space-between;
+        align-items: center;
+        align-content: flex-start;
+
+        .pathway-filter-item {
+            flex-basis: 45%;
+            position: relative;
+            flex-grow: 1;
+            margin: calc(1rem / 18 * 450) calc(1rem / 18 * 10) calc(1rem / 18 * 50);
+            background: none;
+            color: $color-default;
+
+            &:after {
+                position: absolute;
+                left: 0;
+                top: -390px;
+                content: '';
+                width: 100%;
+                height: calc(1rem / 18 * 390);
+                background-image: url('http://sits-pod31.demandware.net/dw/image/v2/AAWM_STG/on/demandware.static/-/Sites-pandora-master-catalog/default/dwb6375a71/images/productimages/550703-1.jpg');
+                background-repeat: no-repeat;
+                background-position: center top;
+                background-size: contain;
+            }
+
+            &-necklaces {
+                &:after {
+                    background-image: url('http://sits-pod31.demandware.net/dw/image/v2/AAWM_STG/on/demandware.static/-/Sites-pandora-master-catalog/default/dwb6375a71/images/productimages/550703-1.jpg');
+                }
+            }
+        }
+  }
+}
+

@@ -4,7 +4,7 @@
 
 // --------- Fonts --------- //
 
-$font-size-base: 75%;
+$font-size-base: 75% !default;
 $font-size-default: 18px;
 $font-title: tungsten-light;
 $font-body: gothamBook;
@@ -23,7 +23,7 @@ $color-default: #372E2C;
 
 $background-color-default: #ffffff;
 $background-color-light: #f1f1f3;
-$background-dark: #383330;
+$background-color-dark: #383330;
 $background-medium: #807974;
 $background-color-active: rgba(100, 91, 104, 0.3);
 
@@ -31,3 +31,12 @@ $background-color-active: rgba(100, 91, 104, 0.3);
 
 $product-list-columns: 3; // Number of columns in product list
 $margin-amount: 0rem; // Distance between each item and around the items
+
+/**
+ * Optional variables
+ *
+ * These variables inherit form the base variables found above, and are not required by default. Only override if you wish to set custom values.
+ */
+
+//$background-color-footer: red; // optionally set a background color for the footer.
+//$background-color-header: red; // Set a custom background colour for the header component
