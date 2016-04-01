@@ -20,8 +20,6 @@ $ npm start
 
 Open Google Chome and visit [http://developer.foyerlive.com/#/dev](http://developer.foyerlive.com/#/dev)
 
-## Developing in Google Chrome
-
 As FoyerLive is designed to display in 1080p resolution, it is recommended you set the viewport dimensions to 1080 x 1920.
 
 ## Styling guide
