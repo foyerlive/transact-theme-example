@@ -18,11 +18,7 @@ Run the project
 $ npm start
 ```
 
-Open Google Chome and visit:
-
-```
-http://developer.foyerlive.com/#/dev
-```
+Open Google Chome and visit [http://developer.foyerlive.com/#/dev](http://developer.foyerlive.com/#/dev)
 
 ## Developing in Google Chrome
 
