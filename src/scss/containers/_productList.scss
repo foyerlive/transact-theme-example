@@ -1,85 +1,105 @@
-$colsLandscape: 7; // Number of columns
-$marginAmount: 0rem; // This value is the distance between each item and around the items..
+/*==========================================================================
+   Product list page
+==========================================================================*/
 
-.product-list-container {
-  background-color: white;
-  padding-top: 0px;
-  > a {
-    box-sizing: border-box;
-    flex-basis: calc( 100% / #{$colsLandscape} - #{$marginAmount} * #{$colsLandscape + 1} / #{$colsLandscape} );
-    margin-left: $marginAmount;
-    margin-top: $marginAmount;
+.pathway-container {
 
-    position: relative;
-    &:active {
-      &:after {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba( 100,91,104,0.3);
-        content: '';
-        z-index: 10;
-      }
-      background: transparent;
+    // --------- Product category tabs --------- //
+
+    .pathway-container-buttons-products {
+        border-top: 1px solid $background-color-light;
+        border-bottom: 1px solid $background-color-light;
+
+        .pathway-filter-item {
+            text-transform: uppercase;
+            background-color: $background-color-light;
+
+
+            &.pathway-button-active {
+                background-color: $background-color-default;
+            }
+        }
     }
 
-  }
+    // --------- Product filters --------- //
 
-  .product-list-item {
-    font-size: 15px;
-    margin-bottom: 0px;
-    padding: 1rem;
-    //border-right: 1px solid #ededed;
-    //border-bottom: 1px solid #ededed;
+    .inline-filters-container {
+        border-bottom: 1px solid $background-color-light;
+    }
 
-    &:nth-child(#{$colsLandscape}n) {
-      border-right-width: 0px;
+    // --------- Product list --------- //
+
+    .pathway-products-container {
+        .product-list-container {
+            background-color: $background-color-default;
+            padding-top: 0px;
+
+            // --------- Product list item --------- //
+
+            .product-list-item {
+                box-sizing: border-box;
+                flex-basis: calc(100% / #{$product-list-columns} - #{$margin-amount} * #{$product-list-columns + 1} / #{$product-list-columns});
+                margin-left: $margin-amount;
+                margin-top: $margin-amount;
+                margin-bottom: 0;
+                position: relative;
+                font-size: calc(1rem / 18 * 15);
+                padding: calc(1rem / 18 * 20);
+
+                &:nth-child(#{$product-list-columns}n) {
+                    border-right-width: 0px;
+                }
+
+                /* Image container. Visible by default. */
+                .product-image {}
+
+                /* SKU. Visible by default */
+                .product-sku {
+                    display: none;
+                }
+
+                /* Name. Visible by default. */
+                .product-name {
+                    font-family: gothamBook;
+                    font-size: calc(1rem / 18 * 18);
+                    text-align: center;
+                    color: $color-title;
+                    text-transform: uppercase;
+                }
+
+                /* Alternative product name. Visible by default. */
+                .product-name-alt {}
+
+                /* Price. Visible by default. */
+                .product-price-container {
+                    .product-price {
+                        display: none;
+
+                        &:before {
+                            content: '$';
+                        }
+                    }
+                }
+
+                /* Star rating. Hidden by default */
+                .product-rating {}
+
+                /* Highlight on touch */
+                &:active {
+                    background: transparent;
+
+                    &:after {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: $background-color-active;
+                        content: '';
+                    }
+                }
+            }
+        }
     }
-    .product-name {
-      font-family: gothamBook;
-      font-size: 1rem;
-      text-align: center;
-      color: $color-title;
-      text-transform: uppercase;
-    }
-    .product-sku {
-      display: none;
-    }
-    .product-price-container {
-      display: none;
-    }
-    //.product-price {
-    //  &:before {
-    //    content: '$';
-    //  }
-    //  //display: none;
-    //  text-align: center;
-    //  color: $color-default;
-    //}
-  }
 }
-
-/* PORTRAIT OVERRIDES */
-@media all and (orientation: portrait) {
-  $cols: 3; // Number of columns
-  $marginAmount: 0rem; // This value is the distance between each item and around the items..
-
-  .product-list-container {
-    > a {
-      flex-basis: calc( 100% / #{$cols} - #{$marginAmount} * #{$cols + 1} / #{$cols} );
-    }
-
-    .product-list-item {
-      &:nth-child(#{$colsLandscape}n) {
-        border-right-width: 1px;
-      }
-      &:nth-child(#{$cols}n) {
-        border-right-width: 0px;
-      }
-    }
-  }
-}
-
 

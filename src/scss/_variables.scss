@@ -9,7 +9,6 @@ $font-size-default: 18px;
 $font-title: tungsten-light;
 $font-body: gothamBook;
 $font-color-default: #3d3b3b;
-
 $line-height-default: 150%;
 
 // --------- Colours --------- //
@@ -19,8 +18,16 @@ $color-title: #686158;
 $color-light: #c0b8b0;
 $color-default: #372E2C;
 
+
 // --------- Background colours --------- //
 
 $background-color-default: #ffffff;
+$background-color-light: #f1f1f3;
 $background-dark: #383330;
 $background-medium: #807974;
+$background-color-active: rgba(100, 91, 104, 0.3);
+
+// --------- Product list --------- //
+
+$product-list-columns: 3; // Number of columns in product list
+$margin-amount: 0rem; // Distance between each item and around the items

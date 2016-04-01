@@ -8,12 +8,12 @@ FoyerLive showcase theme.
 Each component and container within FoyerLive Transact can be overridden using CSS. The default theme ships with all selectors nested in their heirachy, however the inclusion of each SASS file is optional.
  When they are not present, default styles will be loaded.
 
-## Components
+### Components
 
 Re-usable elements that make up part of a page, such as the header and footer.
  
 
-## Containers
+### Containers
 
 Page specific layouts, such as the home page or product detail page. 
 
@@ -21,7 +21,7 @@ Page specific layouts, such as the home page or product detail page.
 
 ..
 
-## Examples
+### Examples
 
 1. Example 1
 2. Example 2
