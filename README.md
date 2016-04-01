@@ -1,7 +1,32 @@
 # FoyerLive example theme
 
-FoyerLive showcase theme.
+FoyerLive delivers an omni-channel marketing capability by taking the best of online in-store. Retailers can update their digital visual merchandising in real time across their store network.
 
+This repository contains a starter theme, and information on how to implement your own FoyerLive solution.
+
+## Getting started
+
+Install the required dependencies
+
+```
+$ npm install
+```
+
+Run the project
+
+```
+$ npm start
+```
+
+Open Google Chome and visit:
+
+```
+http://developer.foyerlive.com/#/dev
+```
+
+## Developing in Google Chrome
+
+As FoyerLive is designed to display in 1080p resolution, it is recommended you set the viewport dimensions to 1080 x 1920.
 
 ## Styling guide
 
