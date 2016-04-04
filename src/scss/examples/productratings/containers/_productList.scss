@@ -2,51 +2,27 @@
    Star ratings example
 ==========================================================================*/
 
-// --------- Product list --------- //
+.product-rating {
+    padding-top: calc(1rem / 18 * 20);
+    display: block;
+    font-size: calc(1rem / 18 * 20);
 
-.pathway-container {
-    .pathway-products-container {
-        .product-list-container {
-            .product-list-item {
-                .product-rating {
-                    padding-top: calc(1rem / 18 * 20);
-                    text-align: center;
-                    display: block;
-                    font-size: calc(1rem / 18 * 20);
+    .rating-base {
+        color: $product-rating-color-base;
+    }
 
-                    .rating-base {
-                        color: $product-rating-color-base;
-                    }
-
-                    .rating-cover {
-                        color: $product-rating-color-cover;
-                    }
-                }
-
-            }
-        }
+    .rating-cover {
+        color: $product-rating-color-cover;
     }
 }
 
 // --------- Product detail --------- //
 
 .product-container {
-    .product-container-portrait {
-        .product-content {
-            .product-rating {
-                line-height: calc(1rem / 18 * 60);
-                display: block;
-                font-size: calc(1rem / 18 * 35);
-
-                .rating-base {
-                    color: $product-rating-color-base;
-                }
-
-                .rating-cover {
-                    color: $product-rating-color-cover;
-                }
-            }
-        }
+    .product-rating {
+        display: block;
+        line-height: calc(1rem / 18 * 60);
+        font-size: calc(1rem / 18 * 35);
     }
 }
 

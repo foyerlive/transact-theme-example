@@ -20,7 +20,7 @@
 
     .pathway-products-container {
         .product-list-container {
-            background-color: $background-color-default;
+            background-color: $product-list-container-background-color;
             padding-top: 0px;
 
             // --------- Product list item --------- //
@@ -31,6 +31,7 @@
                 margin: 0 $product-list-margin;
                 font-size: calc(1rem / 18 * 15);
                 padding: calc(1rem / 18 * 20);
+                text-align: center;
 
                 /* SKU. Visible by default */
                 .product-sku {
@@ -40,7 +41,6 @@
                 /* Name. Visible by default. */
                 .product-name {
                     font-size: calc(1rem / 18 * 20);
-                    text-align: center;
                     color: $font-color-body;
                     font-weight: bold;
                 }

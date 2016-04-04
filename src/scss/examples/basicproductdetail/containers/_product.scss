@@ -43,6 +43,7 @@
 
             .product-sku {
                 position: relative;
+                padding-top: calc(1rem / 18 * 10);
                 font-size: calc(1rem / 18 * 24);
                 color: $color-light;
                 top: auto;

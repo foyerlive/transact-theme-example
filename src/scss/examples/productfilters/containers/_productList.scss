@@ -1,0 +1,22 @@
+/*==========================================================================
+   Product list page
+==========================================================================*/
+
+.pathway-container {
+
+  // --------- Product category tabs --------- //
+
+  .pathway-container-buttons-products {
+    display: flex;
+
+    .pathway-filter-item {
+      background-color: $product-list-pathway-filter-background-color;
+      color: $product-list-pathway-filter-font-color;
+
+      &.pathway-button-active {
+        background-color: $background-color-default;
+      }
+    }
+  }
+}
+
