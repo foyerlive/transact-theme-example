@@ -48,12 +48,20 @@ $background-color-active: rgba(100, 91, 104, 0.3);
 
 //$product-list-container-background-color: red; /* Set a custom background colour for the product list container */
 
+/**
+ * Product List Filters
+ *
+ * When enabled Product filters appear on the product listing page, and allow the user to toggle between sub categories.
+ */
 $enable-product-list-filters: 1; /* Enable product filters */
 //$product-list-pathway-filter-background-color: red; /* Set a custom background colour for the product list filters */
 //$product-list-pathway-filter-font-color: white; /* Set a custom font color for the product list filters */
 
-// --------- Product Ratings --------- //
-
+/**
+ * Product Ratings
+ *
+ * When enabled Product ratings appear on the product listing page and product detail page.
+ */
 $enable-product-rating: 1; /* Enable product star rating */
 //$product-rating-color-base: black; /* Set a custom base color for the product star rating */
 //$product-rating-color-cover: red; /* Set a custom cover color for the product star rating */
