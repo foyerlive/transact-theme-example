@@ -1,3 +1,7 @@
+/*==========================================================================
+   Product checkout container
+==========================================================================*/
+
 .product-checkout-container {
     padding: calc(1rem / 18 * 30);
     background-color: $background-color-light;
@@ -35,6 +39,10 @@
                 }
             }
         }
+    }
+
+    .checkout-message {
+        padding: calc(1rem / 18 * 20);
     }
 
     .continue {
