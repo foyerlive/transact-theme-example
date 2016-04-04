@@ -21,5 +21,7 @@
     .button-find {
         @extend .cta-button;
         margin-top: calc(1rem / 18 * 100);
+        background-color: $home-button-background-color;
+        color: $home-button-font-color;
     }
 }

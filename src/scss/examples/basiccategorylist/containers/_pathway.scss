@@ -20,9 +20,8 @@
             flex-basis: 100%;
             margin-top: calc(1rem / 18 * 30);
             padding: calc(1rem / 18 * 40);
-            background-color: white;
-            border: calc(1rem / 18 * 5) solid $background-medium;
-            border-radius: calc(1rem / 18 * 15);
+            background-color: $background-color-light;
+            border-radius: calc(1rem / 18 * 5);
             color: $background-medium;
             font-size: calc(1rem / 18 * 40);
             text-align: center;

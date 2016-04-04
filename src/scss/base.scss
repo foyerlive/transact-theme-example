@@ -1,10 +1,8 @@
 /*==========================================================================
    Base SASS file
-
-   Used only to import SCSS files
 ==========================================================================*/
 
-// --------- Base Settings --------- //
+// --------- Settings --------- //
 
 @import 'variables';
 @import 'fonts';
@@ -39,21 +37,26 @@
 @import 'containers/productConfigure';
 @import 'containers/productList';
 @import 'containers/search';
-@import 'containers/transition';
 
-// --------- Custom CMS Pages --------- //
+// --------- Custom Pages --------- //
 
 @import 'containers/cms/techPage';
 
 
-// Check out our examples...
+// --------- Examples --------- //
+
 @import 'examples/basicheader/index'; // - Basic Header
 @import 'examples/basicfooter/index'; // - Basic Footer
 @import 'examples/basichomepage/index'; // - Basic Homepage
-@import 'examples/basiccategorylist/index'; // - Basic Category List
+
+@import 'examples/basiccategorylist/index'; // - Simple category list with buttons
+//@import 'examples/advancedcategorylist/index'; // Advanced category list with images
+
+
+
 @import 'examples/basicproductlist/index'; // - Basic Product List
 @import 'examples/basicproductdetail/index'; // - Basic Product Detail page
-@import 'examples/basicsearch/index'; // Basic keyboard
+@import 'examples/basicsearch/index'; // - Basic keyboard
 
 
 

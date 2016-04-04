@@ -6,16 +6,15 @@
 
 $font-size-base: 75% !default;
 $font-size-default: 18px;
-$font-title: tungsten-light;
-$font-body: gothamBook;
+$font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-color-default: #3d3b3b;
 $line-height-default: 150%;
 
 // --------- Colours --------- //
 
 $color-highlight: #ea6953;
-
 $font-color-body: #686158;
+$font-color-alt: #ffffff;
 
 $color-light: #c0b8b0;
 $color-default: #372E2C;
@@ -41,3 +40,7 @@ $background-color-active: rgba(100, 91, 104, 0.3);
 
 //$background-color-footer: red; // optionally set a background color for the footer.
 //$background-color-header: red; // Set a custom background colour for the header component
+
+//$home-button-background-color: red; // Set a custom background color for the homepage button
+//$home-button-font-color: black; // Set a custom font color for homepage button
+

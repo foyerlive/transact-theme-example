@@ -2,25 +2,13 @@
    Font settings
 ==========================================================================*/
 
-// --------- Import custom fonts --------- //
-
-@each $font-face in tungsten-medium tungsten-light gothamBook gothamBold GothamBoldCondensed icon {
-    @font-face {
-        font-family: quote($font-face);
-        src:  url('../assets/fonts/#{$font-face}.woff');
-        font-weight: normal;
-        font-style:  normal;
-        font-stretch: normal;
-    }
-}
-
 // --------- Set default fonts --------- //
 
 html {
     font-size: $font-size-base;
     line-height: $line-height-default;
     color: $font-color-default;
-    font-family: $font-body, "Courier New";
+    font-family: $font-family;
     font-style: normal;
     font-weight: normal;
 }

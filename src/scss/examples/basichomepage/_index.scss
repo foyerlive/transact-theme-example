@@ -1,1 +1,5 @@
+// Override variables
+$home-button-background-color: $color-highlight !default;
+$home-button-font-color: $font-color-alt !default;
+
 @import './containers/home';
