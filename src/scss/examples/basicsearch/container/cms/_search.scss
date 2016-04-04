@@ -1,0 +1,13 @@
+.search-container {
+    .search-interface {
+        background-color: $background-color-light;
+
+        input {
+            background-color: white;
+        }
+
+        .search-input-toggle {
+            color: $background-color-dark;
+        }
+    }
+}
