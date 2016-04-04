@@ -1,33 +1,14 @@
 .product-checkout-container {
-  padding: 2rem 1rem 1rem 1rem;
-  background-color: $color-light;
-
 
   .selectors-container {
-    background-color: transparent;
     .selector-node {
-      margin-bottom: 1rem;
       .selector-container {
         .selector-label {
-          font-family: tungsten-light;
-          font-size: 1.7rem;
-          line-height: 2rem;
         }
         .selector-option {
-          text-transform: uppercase;
-          color: white;
-          background-color: $background-medium;
-          font-family: tungsten-light;
-          font-size: 1.7rem;
-          font-weight: normal;
-          letter-spacing: 2px;
-          line-height: 2rem;
-          padding: 1rem;
           &.selector-option-active {
-            background-color: $color-highlight;
           }
           &.selector-option-disabled {
-            color: $color-light;
           }
         }
       }
@@ -36,41 +17,17 @@
 
   .continue {
     .button {
-      background-color: $color-highlight;
-      color: white;
-      text-transform: uppercase;
-      font-size: 1.7rem;
-      font-weight: normal;
-      border-radius: 5px;
-      padding: 2.5rem;
-      display: flex;
-      align-content: center;
-      justify-content: center;
-      position: relative;
       &.disabled {
-        color: $color-light;
-        background-color: $background-medium;
       }
     }
     &.continue-configure {
       .button {
         &.disabled {
           &:after {
-            position: absolute;
-            font-size: 1rem;
-            font-style: italic;
-            left: 0;
-            //bottom: 0;
-            width: 100%;
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-            //          text-align: center;
-            text-transform: none;
-            content: '(Please be sure to select all options above to continue.)'
           }
         }
       }
     }
   }
 }
+

@@ -1,0 +1,79 @@
+.product-checkout-container {
+    padding: calc(1rem / 18 * 30);
+    background-color: $background-color-light;
+
+    .selectors-container {
+        background-color: transparent;
+
+        .selector-node {
+            margin-bottom: 1rem;
+
+            .selector-container {
+                .selector-label {
+                    font-size: calc(1rem / 18 * 30);
+                    line-height: calc(1rem / 18 * 60);
+                }
+
+                .selector-option {
+                    text-transform: uppercase;
+                    color: white;
+                    background-color: $background-color-dark;
+                    font-size: calc(1rem / 18 * 30);
+                    font-weight: normal;
+                    letter-spacing: calc(1rem / 18 * 2);
+                    line-height: calc(1rem / 18 * 60);
+                    padding: calc(1rem / 18 * 15);
+                    border-radius: calc(1rem / 18 * 5);
+
+                    &.selector-option-active {
+                        background-color: $color-highlight;
+                    }
+
+                    &.selector-option-disabled {
+                        color: $color-light;
+                    }
+                }
+            }
+        }
+    }
+
+    .continue {
+        .button {
+            background-color: $color-highlight;
+            color: white;
+            text-transform: uppercase;
+            font-size: calc(1rem / 18 * 35);
+            font-weight: normal;
+            border-radius: calc(1rem / 18 * 5);
+            padding: calc(1rem / 18 * 45);
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            position: relative;
+
+            &.disabled {
+                color: white;
+                background-color: $color-light;
+            }
+        }
+
+        &.continue-configure {
+            .button {
+                &.disabled {
+                    &:after {
+                        position: absolute;
+                        font-size: calc(1rem / 18 * 20);
+                        font-style: italic;
+                        left: 0;
+                        width: 100%;
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: center;
+                        text-transform: none;
+                        content: '(Select options above to continue)'
+                    }
+                }
+            }
+        }
+    }
+}
