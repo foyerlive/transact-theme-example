@@ -39,9 +39,10 @@
 
                 /* Name. Visible by default. */
                 .product-name {
-                    font-size: calc(1rem / 18 * 18);
+                    font-size: calc(1rem / 18 * 20);
                     text-align: center;
                     color: $font-color-body;
+                    font-weight: bold;
                 }
 
                 /* Price. Visible by default. */

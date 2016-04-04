@@ -70,7 +70,9 @@ const productContainerStructure = {
           className: 'product-content-title',
           children: [
             'name',
+            'rating',
             'price',
+
             'sku'
           ]
         },

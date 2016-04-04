@@ -22,11 +22,6 @@
 @import 'components/product/selector';
 
 @import 'components/util/button';
-@import 'components/util/image';
-@import 'components/util/keyboard';
-@import 'components/util/keypad';
-@import 'components/util/rating';
-@import 'components/util/textSelector';
 
 // --------- Containers --------- //
 
@@ -49,18 +44,21 @@
 //@import 'examples/animatedheader'; // - Animated Header Banner
 
 @import 'examples/basicfooter/index'; // - Basic Footer
+//@import 'examples/fatfooter/index'; // - Having fat footer
+
 @import 'examples/basichomepage/index'; // - Basic Homepage
 
 @import 'examples/basiccategorylist/index'; // - Simple category list with buttons
 //@import 'examples/advancedpathway/index'; // Add category image to top of page
-//@import 'examples/advancedcategorylist/index'; // Advanced category list with images
 
 @import 'examples/basicproductlist/index'; // - Basic Product List
 //@import 'examples/advancedproductlist/index'; // Advanced product list with ratings and prices
+@import 'examples/productratings/index'; // Enable star ratings on product list
 
 @import 'examples/basicproductdetail/index'; // - Basic Product Detail page
-@import 'examples/basicsearch/index'; // - Basic keyboard
+
+@import 'examples/basicsearch/index'; // - Basic search styling
 
 
 
-//@import 'examples/fatfooter/index'; // - Having fat footer
+

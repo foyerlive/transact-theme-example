@@ -38,9 +38,16 @@ $background-color-active: rgba(100, 91, 104, 0.3);
  * These variables inherit form the base variables found above, and are not required by default. Only override if you wish to set custom values.
  */
 
-//$background-color-footer: red; // optionally set a background color for the footer.
-//$background-color-header: red; // Set a custom background colour for the header component
+//$background-color-footer: red; /* optionally set a background color for the footer */
+//$background-color-header: red; /* Set a custom background colour for the header component */
 
-//$home-button-background-color: red; // Set a custom background color for the homepage button
-//$home-button-font-color: black; // Set a custom font color for homepage button
+//$home-button-background-color: red; /* Set a custom background color for the homepage button */
+//$home-button-font-color: black; /* Set a custom font color for homepage button */
+
+
+// --------- Product Ratings --------- //
+
+$enable-product-rating: 1; /* Enable product star rating */
+//$product-rating-color-base: black; /* Set a custom base color for the product star rating */
+//$product-rating-color-cover: red; /* Set a custom cover color for the product star rating */
 
