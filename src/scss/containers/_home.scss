@@ -3,48 +3,7 @@
 ==========================================================================*/
 
 .home-container {
-    background-image: url( '../assets/images/banner.jpg' );
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    padding: 4rem;
-    padding-top: 24rem;
-
-    h1 {
-        display: inline-block;
-        max-width: 60%;
-        font-size: 6rem;
-    }
-
-    li {
-        max-width: 80%;
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        margin-bottom: 2rem;
-    }
-
     .button-find {
-        display: inline-block;
-        font-weight: normal;
-        width: 50%;
-        text-align: center;
-        padding: 3rem;
-        color: white;
-        text-transform: uppercase;
-        font-size: 3rem;
-        background-color: $color-highlight;
-    }
 
-    .techLink {
-        margin-top: 2rem;
-
-        a {
-            font-size: 2rem;
-            color: $color-highlight;
-            text-transform: uppercase;
-        }
     }
 }

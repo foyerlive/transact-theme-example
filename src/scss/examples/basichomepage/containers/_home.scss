@@ -1,0 +1,30 @@
+/*==========================================================================
+   Home screen
+==========================================================================*/
+
+.home-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: calc(1rem / 18 * 80);
+
+    h1 {
+        font-size: calc(1rem / 18 * 100);
+    }
+
+    p {
+        font-size: calc(1rem / 18 * 50);
+        line-height: calc(1rem / 18 * 70);
+        color: $font-color-body;
+    }
+
+    .button-find {
+        margin-top: calc(1rem / 18 * 100);
+        text-align: center;
+        padding: calc(1rem / 18 * 45);
+        color: white;
+        text-transform: uppercase;
+        font-size:  calc(1rem / 18 * 45);
+        background-color: $color-highlight;
+    }
+}

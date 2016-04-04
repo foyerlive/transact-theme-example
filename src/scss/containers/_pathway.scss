@@ -10,87 +10,15 @@
      * Category Title
      */
     .pathway-filter-title-item {
-        background-size: 100% auto;
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-image: url('../assets/images/shop-gender.jpg');
-        padding-top: 504px;
-        display: block;
 
-        /**
-         * Optionally override heading value:
-         *
-         * h2 {
-         *    color: transparent;
-         *    font-size: 0rem;
-         *
-         *    &:after {
-         *        content: 'Touch to view our range';
-         *        color: $color-highlight;
-         *        font-size: 4rem;
-         *    }
-         * }
-         *
-         */
-        /* In our example data feed, we have a category called 'Men', this automaticaly applies a stylesheet that */
-        &.pathway-filter-title-applied-category-men {
-            background-image: url('../assets/images/shop-mens.jpg');
-        }
-
-        &.pathway-filter-title-applied-category-women {
-            background-image: url('../assets/images/shop-womens.jpg');
-        }
     }
 
     .pathway-container-buttons-buttonlist {
-        padding: 0 calc(1rem / 18 * 50) calc(1rem / 18 * 50);
-        justify-content: space-between;
-        align-items: center;
-        align-content: flex-start;
 
         .pathway-filter-item {
-            box-sizing: border-box;
-            flex-grow: 1;
-            flex-shrink: 0;
-            line-height: 4rem;
-            margin-top: 2rem;
-            flex-basis: 100%;
-            padding: 1rem;
-            text-align: center;
-            background-color: $color-light;
-            color: white;
-            font-size: 2rem;
-            text-transform: uppercase;
-            border-radius: 4px;
+
         }
 
-        //.pathway-filter-item {
-        //    flex-basis: 45%;
-        //    position: relative;
-        //    flex-grow: 1;
-        //    margin: calc(1rem / 18 * 450) calc(1rem / 18 * 10) calc(1rem / 18 * 50);
-        //    background: none;
-        //    color: $color-default;
-        //
-        //    &:after {
-        //        position: absolute;
-        //        left: 0;
-        //        top: -390px;
-        //        content: '';
-        //        width: 100%;
-        //        height: calc(1rem / 18 * 390);
-        //        background-image: url('http://sits-pod31.demandware.net/dw/image/v2/AAWM_STG/on/demandware.static/-/Sites-pandora-master-catalog/default/dwb6375a71/images/productimages/550703-1.jpg');
-        //        background-repeat: no-repeat;
-        //        background-position: center top;
-        //        background-size: contain;
-        //    }
-        //
-        //    &-necklaces {
-        //        &:after {
-        //            background-image: url('http://sits-pod31.demandware.net/dw/image/v2/AAWM_STG/on/demandware.static/-/Sites-pandora-master-catalog/default/dwb6375a71/images/productimages/550703-1.jpg');
-        //        }
-        //    }
-        //}
     }
 }
 

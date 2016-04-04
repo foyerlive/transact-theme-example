@@ -45,18 +45,13 @@ html {
 
 h1 {
     color: $color-highlight;
-    text-transform: uppercase;
-    font-family: $font-title;
-    font-size: 5rem;
-    line-height: 5.5rem;
 }
 
 h2 {
-    color: $color-highlight;
-    text-transform: uppercase;
-    font-family: $font-title;
-    font-size: 4rem;
-    line-height: 4.5rem;
+    color: $font-color-body;
+    font-size: calc(1rem / 18 * 60);
+    line-height: calc(1rem / 18 * 100);
+    font-weight: normal;
 }
 
 // Remove highlight on touch
