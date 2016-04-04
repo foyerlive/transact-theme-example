@@ -1,0 +1,5 @@
+/// Override variables
+$background-color-footer: $background-color-dark !default; /// Change the background footer background color...
+
+@import './components/layout/tabs';
+@import './containers/product';
