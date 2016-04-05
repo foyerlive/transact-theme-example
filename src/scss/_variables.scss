@@ -1,36 +1,36 @@
-/*==========================================================================
-   Global Variables
-==========================================================================*/
+/**
+ *  @stylesheet _variables.scss Variables
+ *
+ *  Global variables for all elements
+ *  including fonts, colours, and feature on/off config settings
+ */
 
-// --------- Fonts --------- //
-
+/**
+ * @styles fonts Font Settings
+ *
+ * Default font variables
+ */
 $font-size-base: 75% !default;
 $font-size-default: 18px;
 $font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-color-default: #3d3b3b;
 $line-height-default: 150%;
 
-// --------- Colours --------- //
-
+/**
+ * @styles colors Color Settings
+ *
+ * Default color variables
+ */
 $color-highlight: #ea6953;
 $font-color-body: #686158;
 $font-color-alt: #ffffff;
-
 $color-light: #c0b8b0;
 $color-default: #372E2C;
-
-
-// --------- Background colours --------- //
-
 $background-color-default: #ffffff;
 $background-color-light: #f1f1f3;
 $background-color-dark: #383330;
 $background-medium: #807974;
 $background-color-active: rgba(100, 91, 104, 0.3);
-
-// --------- Product list --------- //
-
-
 
 /**
  * Optional variables
@@ -38,31 +38,42 @@ $background-color-active: rgba(100, 91, 104, 0.3);
  * These variables inherit form the base variables found above, and are not required by default. Only override if you wish to set custom values.
  */
 
-//$background-color-footer: red; /* optionally set a background color for the footer */
-//$background-color-header: red; /* Set a custom background colour for the header component */
 
-//$home-button-background-color: red; /* Set a custom background color for the homepage button */
-//$home-button-font-color: black; /* Set a custom font color for homepage button */
+//$background-color-footer: red; // optionally set a background color for the footer
+//$background-color-header: red; // Set a custom background colour for the header component
 
-// --------- Product List --------- //
+/**
+ * Index container
+ */
+//$index-background-color: red; // Set a custom background colour for the index container
 
-//$product-list-container-background-color: red; /* Set a custom background colour for the product list container */
+/**
+ * Homepage
+ */
+//$home-button-background-color: red; // Set a custom background color for the homepage button
+//$home-button-font-color: black; // Set a custom font color for homepage button
+
+/**
+ * Product List
+ */
+
+//$product-list-container-background-color: red; // Set a custom background colour for the product list container
 
 /**
  * Product List Filters
  *
  * When enabled Product filters appear on the product listing page, and allow the user to toggle between sub categories.
  */
-$enable-product-list-filters: 1; /* Enable product filters */
-//$product-list-pathway-filter-background-color: red; /* Set a custom background colour for the product list filters */
-//$product-list-pathway-filter-font-color: white; /* Set a custom font color for the product list filters */
+$enable-product-list-filters: 1; // Enable product filters
+//$product-list-pathway-filter-background-color: red; // Set a custom background colour for the product list filters
+//$product-list-pathway-filter-font-color: white; // Set a custom font color for the product list filters
 
 /**
  * Product Ratings
  *
  * When enabled Product ratings appear on the product listing page and product detail page.
  */
-$enable-product-rating: 1; /* Enable product star rating */
-//$product-rating-color-base: black; /* Set a custom base color for the product star rating */
-//$product-rating-color-cover: red; /* Set a custom cover color for the product star rating */
+$enable-product-rating: 1; // Enable product star rating
+//$product-rating-color-base: black; // Set a custom base color for the product star rating
+//$product-rating-color-cover: red; // Set a custom cover color for the product star rating
 

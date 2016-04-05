@@ -1,8 +1,15 @@
-/*==========================================================================
-   Product list page
-==========================================================================*/
+/**
+ * Product list
+ * @stylesheet
+ *
+ * @description A list of product items. Each item includes an image, title, SKU, rating and price.
+ */
 
-
+/**
+ * Pathway container
+ * @style
+ * @description Outer container. Wraps around product filters and product items.
+ */
 .pathway-container {
 
     // --------- Product category tabs --------- //

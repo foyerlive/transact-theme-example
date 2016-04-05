@@ -1,9 +1,23 @@
-/*==========================================================================
-   Home screen
-==========================================================================*/
+/**
+ * Home page
+ * @stylesheet
+ *
+ * @description The default page shown when the theme first loads. Includes outer container and call to action button.
+ */
 
+/**
+ * Home Container
+ * @style
+ * @description The outer container of the homepage.
+ */
 .home-container {
-    .button-find {
 
+    /**
+     * Start Button
+     * @style
+     * @description The main call to action on the home page. Links to product listing.
+     */
+    .button-find {
+        // e.g. Set a colors and font size
     }
 }

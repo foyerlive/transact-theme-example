@@ -8,10 +8,9 @@
 /**
  * Index page container
  * @style
- * @description The outer most content container. Page specific containers are contained within this selector.
+ * @description The outer container of the homepage.
  * @variable $index-background-color;
  */
 .index-page-container {
-    // e.g. Set a site wide background colour..
-
+    background-color: $index-background-color;
 }
