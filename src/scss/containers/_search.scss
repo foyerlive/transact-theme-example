@@ -1,10 +1,53 @@
+/**
+ * Search
+ * @stylesheet
+ *
+ * @description The search page shown when a user clicks on the search icon in the header component
+ */
+
+/**
+ * Search container
+ * @style
+ * @description The outer container of the search page.
+ */
 .search-container {
+    // e.g. set a background colour
+
+    /**
+     * Search listing
+     * @style
+     * @description Inner search container
+     */
+    .search-listing {
+        // e.g. set some padding
+
+    }
+
+    /**
+     * Search interface
+     * @style
+     * @description Container that wraps around the search input and keyboard component
+     */
     .search-interface {
+        // e.g. Set a background colour
+
+        // The search input
         input {
+            // e.g. set background colour or border
 
         }
 
+        /**
+         * Search input toggle
+         * @style
+         * @description Button that toggles the visibility of the keyboard
+         */
         .search-input-toggle {
+
+            &:before {
+                // e.g. set font colour to change icon color
+
+            }
 
         }
     }
