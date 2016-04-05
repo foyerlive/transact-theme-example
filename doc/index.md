@@ -2,18 +2,12 @@
 
 __Table of contents__
 
-* [SASS/CSS](#sass)
-* [Variables](#variables)
+* [SASS variables](#variables)
 * [Containers](#containers)
 * [Components](#components)
 * [Examples](#examples)
 
-### <a name="sass"></a>SASS/CSS
-
-So that you can begin writing code straight away, the sample theme ships with each container and component fully commented and void of styling. 
-Simply add your own CSS to start customising.
-
-### <a name="variables"></a>Variables
+### <a name="variables"></a>SASS Variables
 
 To assist you with applying your own custom look and feel, several variables have been provided. These can be found in `_variables.scss`.
 
@@ -58,6 +52,7 @@ For an overview of each container, see below:
 
 
 ### <a name="components"></a>Components
+
 * Header
 * Footer
 
