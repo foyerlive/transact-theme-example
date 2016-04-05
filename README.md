@@ -13,4 +13,4 @@ Then open `http://developer.foyerlive.com/#/dev` in your Chrome browser and set 
 
 ## Documentation
 
-1. Components
+For an overview of the theme structue, basic and advanced examples see the [Documenation](/documentation/index.md)
