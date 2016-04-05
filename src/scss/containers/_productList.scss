@@ -12,56 +12,160 @@
  */
 .pathway-container {
 
-    // --------- Product category tabs --------- //
-
+    /**
+     * Product sub category filters
+     * @style
+     * @description Container for list of buttons that filter the product list based on sub category
+     */
     .pathway-container-buttons-products {
+        // e.g. Set flexbox options to display in tab format
         display: none;
 
+        /**
+         * Sub category filter
+         * @style
+         * @description Individual sub category filter button
+         */
         .pathway-filter-item {
+            // e.g. Set background colour and font size
 
-
+            /**
+             * Active sub category filter
+             * @style
+             * @description The currently selected item
+            */
             &.pathway-button-active {
+                // e.g. Set a different background colour
+
             }
         }
     }
 
-    // --------- Product filters --------- //
-
+    /**
+     * Inline filter container
+     * @style
+     * @description Wrapper for the inline product filter options.
+     */
     .inline-filters-container {
+        // e.g. Set a background colour
+
     }
 
-    // --------- Product list --------- //
-
+    /**
+     * Pathway products container
+     * @style
+     * @description Outer product list container
+     */
     .pathway-products-container {
+        // e.g. Set flex box options
+
+        /**
+         * Product list container
+         * @style
+         * @description Container that wraps around the product items
+         */
         .product-list-container {
+            // e.g. Set background colour
 
-            // --------- Product list item --------- //
-
+            /**
+             * Product list item
+             * @style
+             * @description Individual product item container
+             */
             .product-list-item {
+                // e.g. Set some padding or border options
 
-                /* Image container. Visible by default. */
-                .product-image {}
+                /**
+                 * Product image
+                 * @style
+                 * @description The product image container. Contains a div with a background image set to contain.
+                 */
+                .product-image {
+                    // e.g. Set some padding
 
-                /* SKU. Visible by default */
+                }
+
+                /**
+                 * Product SKU
+                 * @style
+                 * @description Unique stock keeping identifier
+                 */
                 .product-sku {
-                    //display: none;
+                    // e.g. set to display: none to hide
+
                 }
 
-                /* Name. Visible by default. */
+                /**
+                 * Product name
+                 * @style
+                 * @description A div containing the product name
+                 */
                 .product-name {
+                    // e.g set font-size, color etc
+
                 }
 
-                /* Alternative product name. Visible by default. */
-                .product-name-alt {}
+                /**
+                 * Product name alt
+                 * @style
+                 * @description Contains an alternate product name. Often in a compact format to fit better within the product list.
+                 */
+                .product-name-alt {
+                    // e.g set font-size, color etc or display: none
 
-                /* Price. Visible by default. */
+                }
+
+                /**
+                 * Product price container
+                 * @style
+                 * @description Outer container for the product items price. Contains price and previous price (where applicable)
+                 */
                 .product-price-container {
+
+                    /**
+                     * Product price
+                     * @style
+                     * @description The current price of the product.
+                     */
                     .product-price {
+                        // e.g. Set colour and font size
+
+                        &:before {
+                            content: '$' // Add currency symbol
+                        }
+                    }
+
+                    /**
+                     * Product price previous
+                     * @style
+                     * @description The previous price of the product.
+                     */
+                    .product-price-previous {
+                        text-decoration: line-through; // Strike out the price
+
+                        &:empty {
+                            display: none; // Don't show anything when the previous price hasn't been provided
+                        }
+
+                        &:before {
+                            content: '$'; // Add currency symbol
+                        }
+
+                        &:after {
+                            content: '-'; // Add a dash between previous price, and current price
+                            padding: 0 calc(1rem / 18 * 5); // Add some padding after the dash
+                        }
                     }
                 }
 
-                /* Star rating. Hidden by default */
-                .product-rating {}
+                /**
+                 * Product rating
+                 * @style
+                 * @description Container for the products star rating.
+                 */
+                .product-rating {
+                    // e.g. Add some padding or display: none to hide
+                }
             }
         }
     }
