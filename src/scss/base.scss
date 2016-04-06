@@ -4,8 +4,10 @@
 
 /**
  * Example Themes
+ *
+ * Turning themes off will revert layout back to bare bones
  */
-@import 'examples/basic/index'; // Basic Header
+@import 'examples/basic/index'; // Basic (default)
 
 /**
  * Components
@@ -43,14 +45,11 @@
 
 
 
-
-
+/**
+ * TODO: These advanced examples need a new home..
+ */
 //@import 'examples/animatedbanner/index'; // Animated Banner above header
 //@import 'examples/fatfooter/index'; // Having fat footer
-
-//@import 'examples/productratings/index'; // Star ratings on product list
-
-
 
 // Advanced
 //@import 'examples/advancedpathway/index'; // Add category image to top of page
