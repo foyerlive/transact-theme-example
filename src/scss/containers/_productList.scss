@@ -11,22 +11,21 @@
 
     /**
      * Container for list of buttons that filter the product list based on sub category
+     * e.g. Set flexbox options to display in tab format
      */
     .pathway-container-buttons-products {
-        // e.g. Set flexbox options to display in tab format
-        display: none;
 
         /**
          * Individual sub category filter button
+         * e.g. Set background colour and font size
          */
         .pathway-filter-item {
-            // e.g. Set background colour and font size
 
             /**
              * The currently selected item
+             * e.g. Set a different background colour
              */
             &.pathway-button-active {
-                // e.g. Set a different background colour
 
             }
         }
@@ -34,59 +33,59 @@
 
     /**
      * Wrapper for the inline product filter options.
+     * e.g. Set a background colour
      */
     .inline-filters-container {
-        // e.g. Set a background colour
 
     }
 
     /**
      * Outer product list container
+     * e.g. Set flex box options
      */
     .pathway-products-container {
-        // e.g. Set flex box options
 
         /**
          * Container that wraps around the product items
+         * e.g. Set background colour
          */
         .product-list-container {
-            // e.g. Set background colour
 
             /**
              * Individual product item container
+             * e.g. Set some padding or border options
              */
             .product-list-item {
-                // e.g. Set some padding or border options
 
                 /**
                  * The product image container. Contains a div with a background image set to contain.
+                 * e.g. Set some padding
                  */
                 .product-image {
-                    // e.g. Set some padding
 
                 }
 
                 /**
                  * Unique stock keeping identifier
+                 * e.g. set to display: none to hide
                  */
                 .product-sku {
-                    // e.g. set to display: none to hide
 
                 }
 
                 /**
                  * A div containing the product name
+                 * e.g set font-size, color etc
                  */
                 .product-name {
-                    // e.g set font-size, color etc
 
                 }
 
                 /**
                  * Contains an alternate product name. Often in a compact format to fit better within the product list.
+                 * e.g set font-size, color etc or display: none
                  */
                 .product-name-alt {
-                    // e.g set font-size, color etc or display: none
 
                 }
 
@@ -97,36 +96,40 @@
 
                     /**
                      * The current price of the product.
+                     * e.g. Set colour and font size
                      */
                     .product-price {
-                        // e.g. Set colour and font size
 
+                        //e.g. content: '$' to add a currency symbol
                         &:before {
-                            //e.g. content: '$' to add a currency symbol
+
                         }
                     }
 
                     /**
                      * The previous price of the product.
+                     * e.g. text-decoration: line-through; to strike out the price
                      */
                     .product-price-previous {
-                        // e.g. text-decoration: line-through; to strike out the price
 
+                        // e.g. display: none; so that nothing is shown when the previous price hasn't been provided
                         &:empty {
-                            // e.g. display: none; so that nothing is shown when the previous price hasn't been provided
+
                         }
 
+                        // e.g. content: '$'; to add a currency symbol
                         &:before {
-                            // e.g. content: '$'; to add a currency symbol
+
                         }
                     }
                 }
 
                 /**
                  * Container for the products star rating.
+                 * e.g. Add some padding or display: none to hide
                  */
                 .product-rating {
-                    // e.g. Add some padding or display: none to hide
+
                 }
             }
         }

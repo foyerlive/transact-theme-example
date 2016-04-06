@@ -1,15 +1,13 @@
 /**
- * @stylesheet _variables.scss Variables
- * @link https://github.com/foyerlive/transact-theme-example/blob/master/doc/index.md#variables
+ * Variables
+ * see https://github.com/foyerlive/transact-theme-example/blob/master/doc/index.md#variables
  *
  * Global variables for all elements
  * including fonts, colours, and feature on/off config settings
  */
 
 /**
- * @styles fonts Font Settings
- *
- * Default font variables
+ * Font Settings
  */
 $font-size-base: 75% !default;
 $font-size-default: 18px;
@@ -18,9 +16,7 @@ $font-color-default: #3d3b3b;
 $line-height-default: 150%;
 
 /**
- * @styles colors Color Settings
- *
- * Default color variables
+ * Color Settings
  */
 $color-highlight: #ea6953;
 $font-color-body: #686158;

@@ -7,7 +7,12 @@
   // --------- Product category tabs --------- //
 
   .pathway-container-buttons-products {
-    display: flex;
+    display: none;
+
+    @if $enable-product-list-filters == 1  {
+      display: flex;
+    }
+
 
     .pathway-filter-item {
       background-color: $product-list-pathway-filter-background-color;

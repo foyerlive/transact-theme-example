@@ -6,21 +6,21 @@
 
 /**
  * The outer most container for the product detail page
+ * e.g. set background colour
  */
 .product-container {
-    // e.g. set background colour
 
     /**
      * Inner container for product detail, container product details and checkout button
+     * e.g. Set some flexbox options
      */
     .product-container-portrait {
-        // e.g. Set some flexbox options
 
         /**
          * Contains the product details include, title, price, gallery and description but not he checkout button
+         * e.g. set some padding
          */
         .product-content {
-            // e.g. set some padding
 
             &::-webkit-scrollbar {
                 //width: 0 !important; // Hide scrollbars
@@ -34,17 +34,17 @@
 
                 /**
                  * A div containing the product name
+                 * e.g. set a font size or colour
                  */
                 .product-name {
-                    // e.g. set a font size or colour
 
                 }
 
                 /**
                  * Contains five star ratings if enabled
+                 * e.g. Set line height and colour
                  */
                 .product-rating {
-                    // e.g. Set line height and colour
 
                     /**
                      * Wrapper container or the star ratings
@@ -53,17 +53,17 @@
 
                         /**
                          * The inactive stars
+                         * e.g. set a inactive colour
                          */
                         .rating-base {
-                            // e.g. set a inactive colour
 
                         }
 
                         /**
                          * The actual star rating
+                         * e.g. set a highlight colour
                          */
                         .rating-cover {
-                            // e.g. set a highlight colour
 
                         }
                     }
@@ -71,15 +71,15 @@
 
                 /**
                  * Container for the the product price, includes current price and previous price where available
+                 * e.g. set some padding
                  */
                 .product-price-container {
-                    // e.g. set some padding
 
                     /**
                      * Container for the the product price
+                     * e.g. set a font size and colour
                      */
                     .product-price {
-                        // e.g. set a font size and colour
 
                         // Set a currency symbol
                         &:before {
@@ -88,17 +88,20 @@
                         }
                     }
 
+                    /**
+                     * The price before an item went on sale (aka RRP)
+                     * e.g. A strike though
+                     */
                     .product-price-previous {
-                        // e.g. A strike though
 
                     }
                 }
 
                 /**
                  * Contains the SKU number
+                 * e.g. set display: none to hide
                  */
                 .product-sku {
-                    // e.g. set display: none to hide
 
                     // Add a prefix
                     &:before {
@@ -109,21 +112,21 @@
 
                 /**
                  * Container image gallery, contains image, navigation, pagination and previews
+                 *  e.g. set some padding
                  */
                 .gallery-container {
-                    // e.g. set some padding
 
                     /**
                      * Container for the next and previous buttons
+                     * e.g. set some padding
                      */
                     .gallery-navigation {
-                        // e.g. set some padding
 
                         /**
                          * Links to the previous image
+                         * e.g. set a colour and icon font family
                          */
                         .gallery-btn-prev {
-                            // e.g. set a colour and icon font famiy
 
                             // Update the icon
                             &:before {
@@ -134,9 +137,9 @@
 
                         /**
                          * Links to the next image
+                         * e.g. set a colour and icon font family
                          */
                         .gallery-btn-next {
-                            // e.g. set a colour and icon font famiy
 
                             // Update the icon
                             &:before {
@@ -148,15 +151,15 @@
 
                     /**
                      * Container for the gallery images
+                     * e.g. set position
                      */
                     .gallery-images {
-                        // e.g. set position
 
                         /**
                          * Contains child div's with background images
+                         * e.g. set a height for the container
                          */
                         .gallery-items {
-                            // e.g. set a height for the container
 
                             // Set background image options
                             div {
@@ -168,9 +171,9 @@
 
                     /**
                      * Contains child divs with background images (thumbnails)
+                     * e.g. display: block; to show previews
                      */
                     .gallery-previews {
-                        // e.g. display: block; to show previews
 
                     }
 
@@ -181,9 +184,9 @@
 
                         /**
                          * Button which links to a corresponding product gallery image
+                         * e.g. change the icon font family or colour
                          */
                         .pagination-item {
-                            // e.g. change the icon font family or colour
 
                             &:before {
                                 // e.g. set content: '\25CF'; to change the icon used
@@ -200,17 +203,33 @@
 
                 /**
                  * Outer container for the tab component
+                 * e.g. set flexbox options or border
                  */
                 .tabs {
-                    // e.g. set flexbox options or border
 
+                    /**
+                     * The actual tab
+                     * e.g. set a background colour, font size and colour
+                     */
                     label {
 
                     }
 
+                    /**
+                     * The currently selected tab
+                     * e.g. set a different background colour to highlight that it's selected
+                     */
+                    input[type=radio]:checked + label {
 
+                    }
+
+                    /**
+                     * The contents of a tab.
+                     * Specific tabs can be targeted e.g. &-features {}
+                     * e.g. set some padding, font size and line height
+                     */
                     .tab-content {
-                        // Specific tabs can be targeted e.g. &-features {}
+
                     }
                  }
              }
