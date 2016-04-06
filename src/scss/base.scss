@@ -1,62 +1,60 @@
 /**
  * Base theme layout
- *
- * The follow SASS files
  */
 
-// Settings
-@import 'variables';
-@import 'fonts';
+/**
+ * Example Themes
+ */
+@import 'examples/basic/index'; // Basic Header
 
-// Components
-@import 'components/gallery';
-@import 'components/inlineFilters';
-@import 'components/layout/footer';
-@import 'components/layout/header';
-@import 'components/layout/help';
-@import 'components/util/button';
+/**
+ * Components
+ *
+ * see https://github.com/foyerlive/transact-theme-example/blob/master/doc/index.md#components
+ */
+//@import 'components/gallery';
+//@import 'components/inlineFilters';
+//@import 'components/layout/footer';
+//@import 'components/layout/header';
+//@import 'components/layout/help';
+//@import 'components/util/button';
 
-// Containers
-@import 'containers/home';
-@import 'containers/index';
-@import 'containers/pathway';
-@import 'containers/product';
-@import 'containers/productList';
-@import 'containers/search';
+/**
+ * Containers
+ *
+ * Each page lives in it's own container. As a starting point the structure of each page has been documented, so that you can immediately begin creating your
+ * own theme.
+ * see https://github.com/foyerlive/transact-theme-example/blob/master/doc/index.md#containers
+ */
+@import 'containers/index'; // Index container
+@import 'containers/home'; // Home page
+@import 'containers/pathway'; // Category page
+@import 'containers/productList'; // Product listing page
+@import 'containers/product'; // Product detail page
+@import 'containers/search'; // Search page
 
-// Custom Pages
+/**
+ * Custom pages
+ *
+ * You can easily create your own pages using our container structure
+ * see TBC..
+ */
 @import 'containers/cms/techPage';
 
 
-/**
- * Examples
- *
- *
- */
 
 
-@import 'examples/basicindex/index'; // Basic index
 
-@import 'examples/basicheader/index'; // Basic Header
 //@import 'examples/animatedbanner/index'; // Animated Banner above header
+//@import 'examples/fatfooter/index'; // Having fat footer
 
-@import 'examples/basicfooter/index'; // - Basic Footer
-//@import 'examples/fatfooter/index'; // - Having fat footer
+//@import 'examples/productratings/index'; // Star ratings on product list
 
-@import 'examples/basichomepage/index'; // - Basic Homepage
 
-@import 'examples/basiccategorylist/index'; // - Simple category list with buttons
+
+// Advanced
 //@import 'examples/advancedpathway/index'; // Add category image to top of page
-//@import 'examples/advancedcategorylist/index'; // Add category image to top of page
-
-@import 'examples/basicproductlist/index'; // - Basic Product List
-@import 'examples/productratings/index'; // Star ratings on product list
-@import 'examples/productfilters/index'; // Product filter
-
-@import 'examples/basicproductdetail/index'; // - Basic Product Detail page
-
-@import 'examples/basicsearch/index'; // - Basic search styling
-
+//@import 'examples/advanced/category-list/index'; // Add category image to top of page
 
 
 

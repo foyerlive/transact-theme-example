@@ -1,0 +1,15 @@
+/**
+ * Index container
+ *
+ * The inner container found on all pages, nested between the header and footer components.
+ */
+
+/**
+ * The outer container of the homepage.
+ */
+
+$index-background-color: $background-color-default !default;
+
+.index-page-container {
+    background-color: $index-background-color;
+}

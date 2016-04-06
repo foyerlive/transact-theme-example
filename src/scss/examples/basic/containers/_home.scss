@@ -1,6 +1,9 @@
-/*==========================================================================
-   Home screen
-==========================================================================*/
+/**
+ * Home screen
+ */
+
+$home-button-background-color: $color-highlight !default;
+$home-button-font-color: $font-color-alt !default;
 
 .home-container {
     display: flex;
