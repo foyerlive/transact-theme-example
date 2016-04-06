@@ -1,30 +1,22 @@
-/*==========================================================================
-   Base SASS file
-==========================================================================*/
+/**
+ * Base theme layout
+ *
+ * The follow SASS files
+ */
 
-// --------- Settings --------- //
-
+// Settings
 @import 'variables';
 @import 'fonts';
 
-// --------- Components --------- //
-
-@import 'components/breadcrumbs';
+// Components
 @import 'components/gallery';
 @import 'components/inlineFilters';
-
 @import 'components/layout/footer';
 @import 'components/layout/header';
 @import 'components/layout/help';
-@import 'components/layout/tabs';
-
-@import 'components/product/orderButton';
-@import 'components/product/selector';
-
 @import 'components/util/button';
 
-// --------- Containers --------- //
-
+// Containers
 @import 'containers/home';
 @import 'containers/index';
 @import 'containers/pathway';
@@ -33,17 +25,21 @@
 @import 'containers/productList';
 @import 'containers/search';
 
-// --------- Custom Pages --------- //
-
+// Custom Pages
 @import 'containers/cms/techPage';
 
 
-// --------- Examples --------- //
+/**
+ * Examples
+ *
+ *
+ */
 
-@import 'examples/basicindex/index'; // - Basic index
 
-@import 'examples/basicheader/index'; // - Basic Header
-//@import 'examples/animatedheader'; // - Animated Header Banner
+@import 'examples/basicindex/index'; // Basic index
+
+@import 'examples/basicheader/index'; // Basic Header
+//@import 'examples/animatedheader'; // Animated Header Banner
 
 @import 'examples/basicfooter/index'; // - Basic Footer
 //@import 'examples/fatfooter/index'; // - Having fat footer
@@ -57,7 +53,7 @@
 @import 'examples/basicproductlist/index'; // - Basic Product List
 //@import 'examples/advancedproductlist/index'; // Advanced product list with ratings and prices
 @import 'examples/productratings/index'; // Star ratings on product list
-@import 'examples/productfilters/index'; // Star ratings on product list
+@import 'examples/productfilters/index'; // Product filter
 
 @import 'examples/basicproductdetail/index'; // - Basic Product Detail page
 

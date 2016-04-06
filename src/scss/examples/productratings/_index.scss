@@ -2,6 +2,4 @@
 $product-rating-color-base: $background-color-light !default;
 $product-rating-color-cover: $color-highlight !default;
 
-@if $enable-product-rating == 1  {
-  @import './containers/productList';
-}
+@import './containers/productList';

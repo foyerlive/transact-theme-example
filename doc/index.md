@@ -25,7 +25,7 @@ __Colours__
 
 | Name                            | Description                                     | Example                   |
 |---------------------------------|-------------------------------------------------|---------------------------|
-| `$color-highlight`              | Call to action colo r                           | #ea6953                   |
+| `$color-highlight`              | Call to action color                            | #ea6953                   |
 | `$font-color-body`              | Body text colour                                | #686158                   |
 | `$font-color-alt`               | Alternative font colour dark backgrounds        | #ffffff                   |
 | `$color-light`                  | Light font colour                               | #c0b8b0                   |

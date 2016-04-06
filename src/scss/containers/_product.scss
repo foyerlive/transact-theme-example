@@ -1,27 +1,256 @@
-.product-container-portrait {
-  .product-content {
-    &::-webkit-scrollbar {
-    }
-  }
-  .order-container {
-    .button {
-    }
-  }
-}
-.product-content {
-  .product-content-title {
-  }
-  .product-name {
-  }
-  .product-price-container {
-    .product-price {
-    }
-  }
+/**
+ * Product detail page
+ * @stylesheet
+ *
+ * @description The product detail page container, include image galley and feature tabs
+ */
 
-  .product-rating {
-    display: none;
-  }
+/**
+ * Product container
+ * @style
+ * @description The outer most container for the product detail page
+ */
+.product-container {
+    // e.g. set background colour
 
-  .product-sku {
-  }
+    /**
+     * Product container portrait
+     * @style
+     * @description Inner container for product detail, container product details and checkout button
+     */
+    .product-container-portrait {
+        // e.g. Set some flexbox options
+
+        /**
+         * Product content
+         * @style
+         * @description Contains the product details include, title, price, gallery and description but not he checkout button
+         */
+        .product-content {
+            // e.g. set some padding
+
+            &::-webkit-scrollbar {
+                //width: 0 !important; // Hide scrollbars
+
+            }
+
+            /**
+             * Product content title
+             * @style
+             * @description Wrapper container for the product name
+             */
+            .product-content-title {
+
+                /**
+                 * Product name
+                 * @style
+                 * @description A div containing the product name
+                 */
+                .product-name {
+                    // e.g. set a font size or colour
+
+                }
+
+                /**
+                 * Product rating
+                 * @style
+                 * @description Contains five star ratings if enabled
+                 */
+                .product-rating {
+                    // e.g. Set line height and colour
+
+                    /**
+                     * Rating container
+                     * @style
+                     * @description Wrapper container or the star ratings
+                     */
+                    .rating-container {
+
+                        /**
+                         * Rating base
+                         * @style
+                         * @description The inactive stars
+                         */
+                        .rating-base {
+                            // e.g. set a inactive colour
+
+                        }
+
+                        /**
+                         * Rating cover
+                         * @style
+                         * @description The actual star rating
+                         */
+                        .rating-cover {
+                            // e.g. set a highlight colour
+
+                        }
+                    }
+                }
+
+                /**
+                 * Product price container
+                 * @style
+                 * @description Container for the the product price, includes current price and previous price where available
+                 */
+                .product-price-container {
+                    // e.g. set some padding
+
+                    /**
+                     * Product price
+                     * @style
+                     * @description Container for the the product price
+                     */
+                    .product-price {
+                        // e.g. set a font size and colour
+
+                        // Set a currency symbol
+                        &:before {
+                            // e.g. content: '$';
+
+                        }
+                    }
+
+                    .product-price-previous {
+                        // e.g. A strike though
+
+                    }
+                }
+
+                /**
+                 * Product SKU
+                 * @style
+                 * @description Contains the SKU number
+                 */
+                .product-sku {
+                    // e.g. set display: none to hide
+
+                    // Add a prefix
+                    &:before {
+                        // e.g. content: 'SKU ';
+
+                    }
+                }
+
+                /**
+                 * Gallery container
+                 * @style
+                 * @description Container image gallery, contains image, navigation, pagination and previews
+                 */
+                .gallery-container {
+                    // e.g. set some padding
+
+                    /**
+                     * Gallery navigation
+                     * @style
+                     * @description Container for the next and previous buttons
+                     */
+                    .gallery-navigation {
+                        // e.g. set some padding
+
+                        /**
+                         * Gallery btn prev
+                         * @style
+                         * @description Links to the previous image
+                         */
+                        .gallery-btn-prev {
+                            // e.g. set a colour and icon font famiy
+
+                            // Update the icon
+                            &:before {
+                                // e.g. content: '\E606';
+
+                            }
+                        }
+
+                        /**
+                         * Gallery btn next
+                         * @style
+                         * @description Links to the next image
+                         */
+                        .gallery-btn-next {
+                            // e.g. set a colour and icon font famiy
+
+                            // Update the icon
+                            &:before {
+                                // e.g. content: '\E606';
+
+                            }
+                        }
+                    }
+
+                    /**
+                     * Gallery images
+                     * @style
+                     * @description Container for the gallery images
+                     */
+                    .gallery-images {
+                        // e.g. set position
+
+                        /**
+                         * Gallery items
+                         * @style
+                         * @description Contains child div's with background images
+                         */
+                        .gallery-items {
+                            // e.g. set a height for the container
+
+                            // Set background image options
+                            div {
+
+                            }
+
+                        }
+                    }
+
+                    /**
+                     * Gallery previews
+                     * @style
+                     * @description Contains child divs with background images (thumbnails)
+                     */
+                    .gallery-previews {
+                        // e.g. display: block; to show previews
+
+                    }
+
+                    /**
+                     * Gallery pagination
+                     * @style
+                     * @description Contains child divs with background images (thumbnails)
+                     */
+                    .gallery-pagination {
+
+                        .pagination-item {
+                            // e.g. change the icon font family or colour
+
+                            &:before {
+                                // e.g. set content: '\25CF'; to change the icon used
+                            }
+                        }
+                    }
+                }
+            }
+
+            .tab-container {
+                .tabs {
+                    label {
+
+                    }
+
+
+                    .tab-content {
+                        // Specific tabs can be targeted e.g. &-features {}
+                    }
+                 }
+             }
+         }
+
+        .order-container {
+
+            .button {
+
+            }
+        }
+    }
 }
+

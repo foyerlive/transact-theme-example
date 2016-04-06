@@ -131,7 +131,7 @@
                         // e.g. Set colour and font size
 
                         &:before {
-                            content: '$' // Add currency symbol
+                            //e.g. content: '$' to add a currency symbol
                         }
                     }
 
@@ -141,19 +141,14 @@
                      * @description The previous price of the product.
                      */
                     .product-price-previous {
-                        text-decoration: line-through; // Strike out the price
+                        // e.g. text-decoration: line-through; to strike out the price
 
                         &:empty {
-                            display: none; // Don't show anything when the previous price hasn't been provided
+                            // e.g. display: none; so that nothing is shown when the previous price hasn't been provided
                         }
 
                         &:before {
-                            content: '$'; // Add currency symbol
-                        }
-
-                        &:after {
-                            content: '-'; // Add a dash between previous price, and current price
-                            padding: 0 calc(1rem / 18 * 5); // Add some padding after the dash
+                            // e.g. content: '$'; to add a currency symbol
                         }
                     }
                 }

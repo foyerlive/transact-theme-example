@@ -3,8 +3,13 @@
 ==========================================================================*/
 
 .product-rating {
+    display: none;
+
+    @if $enable-product-rating == 1  {
+        display: block;
+    }
+
     padding-top: calc(1rem / 18 * 20);
-    display: block;
     font-size: calc(1rem / 18 * 20);
 
     .rating-base {
@@ -20,7 +25,6 @@
 
 .product-container {
     .product-rating {
-        display: block;
         line-height: calc(1rem / 18 * 60);
         font-size: calc(1rem / 18 * 35);
     }
