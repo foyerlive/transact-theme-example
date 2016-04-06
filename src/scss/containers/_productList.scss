@@ -1,39 +1,30 @@
 /**
  * Product list
- * @stylesheet
  *
- * @description A list of product items. Each item includes an image, title, SKU, rating and price.
+ * A list of product items. Each item includes an image, title, SKU, rating and price.
  */
 
 /**
- * Pathway container
- * @style
- * @description Outer container. Wraps around product filters and product items.
+ * Outer container. Wraps around product filters and product items.
  */
 .pathway-container {
 
     /**
-     * Product sub category filters
-     * @style
-     * @description Container for list of buttons that filter the product list based on sub category
+     * Container for list of buttons that filter the product list based on sub category
      */
     .pathway-container-buttons-products {
         // e.g. Set flexbox options to display in tab format
         display: none;
 
         /**
-         * Sub category filter
-         * @style
-         * @description Individual sub category filter button
+         * Individual sub category filter button
          */
         .pathway-filter-item {
             // e.g. Set background colour and font size
 
             /**
-             * Active sub category filter
-             * @style
-             * @description The currently selected item
-            */
+             * The currently selected item
+             */
             &.pathway-button-active {
                 // e.g. Set a different background colour
 
@@ -42,9 +33,7 @@
     }
 
     /**
-     * Inline filter container
-     * @style
-     * @description Wrapper for the inline product filter options.
+     * Wrapper for the inline product filter options.
      */
     .inline-filters-container {
         // e.g. Set a background colour
@@ -52,33 +41,25 @@
     }
 
     /**
-     * Pathway products container
-     * @style
-     * @description Outer product list container
+     * Outer product list container
      */
     .pathway-products-container {
         // e.g. Set flex box options
 
         /**
-         * Product list container
-         * @style
-         * @description Container that wraps around the product items
+         * Container that wraps around the product items
          */
         .product-list-container {
             // e.g. Set background colour
 
             /**
-             * Product list item
-             * @style
-             * @description Individual product item container
+             * Individual product item container
              */
             .product-list-item {
                 // e.g. Set some padding or border options
 
                 /**
-                 * Product image
-                 * @style
-                 * @description The product image container. Contains a div with a background image set to contain.
+                 * The product image container. Contains a div with a background image set to contain.
                  */
                 .product-image {
                     // e.g. Set some padding
@@ -86,9 +67,7 @@
                 }
 
                 /**
-                 * Product SKU
-                 * @style
-                 * @description Unique stock keeping identifier
+                 * Unique stock keeping identifier
                  */
                 .product-sku {
                     // e.g. set to display: none to hide
@@ -96,9 +75,7 @@
                 }
 
                 /**
-                 * Product name
-                 * @style
-                 * @description A div containing the product name
+                 * A div containing the product name
                  */
                 .product-name {
                     // e.g set font-size, color etc
@@ -106,9 +83,7 @@
                 }
 
                 /**
-                 * Product name alt
-                 * @style
-                 * @description Contains an alternate product name. Often in a compact format to fit better within the product list.
+                 * Contains an alternate product name. Often in a compact format to fit better within the product list.
                  */
                 .product-name-alt {
                     // e.g set font-size, color etc or display: none
@@ -116,16 +91,12 @@
                 }
 
                 /**
-                 * Product price container
-                 * @style
-                 * @description Outer container for the product items price. Contains price and previous price (where applicable)
+                 * Outer container for the product items price. Contains price and previous price (where applicable)
                  */
                 .product-price-container {
 
                     /**
-                     * Product price
-                     * @style
-                     * @description The current price of the product.
+                     * The current price of the product.
                      */
                     .product-price {
                         // e.g. Set colour and font size
@@ -136,9 +107,7 @@
                     }
 
                     /**
-                     * Product price previous
-                     * @style
-                     * @description The previous price of the product.
+                     * The previous price of the product.
                      */
                     .product-price-previous {
                         // e.g. text-decoration: line-through; to strike out the price
@@ -154,9 +123,7 @@
                 }
 
                 /**
-                 * Product rating
-                 * @style
-                 * @description Container for the products star rating.
+                 * Container for the products star rating.
                  */
                 .product-rating {
                     // e.g. Add some padding or display: none to hide

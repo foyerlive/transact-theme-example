@@ -1,38 +1,29 @@
 /**
  * Pathway styles
- * @stylesheet
  *
- * @description The category pages and product list.
+ * The category pages and product list.
  */
 
 /**
- * Pathway container
- * @style
- * @description Located within the index page container, this container wraps around the category buttons, and product list
+ * Located within the index page container, this container wraps around the category buttons, and product list
  */
 .pathway-container {
 
     /**
-     * Page Title
-     * @style
-     * @description Displayed at the top of the page on category and product list pages.
+     * Displayed at the top of the page on category and product list pages.
      */
     .pathway-filter-title-item {
         // e.g. Set font size and colour
     }
 
     /**
-     * Button list
-     * @style
-     * @description Container for product categories buttons
+     * Container for product categories buttons
      */
     .pathway-container-buttons-buttonlist {
         // e.g. Set some padding or flexbox options
 
         /**
-         * Category Button
-         * @style
-         * @description Individual category item. Links to a list of products.
+         * Individual category item. Links to a list of products.
          */
         .pathway-filter-item {
             // e.g. Set a background colour and font size

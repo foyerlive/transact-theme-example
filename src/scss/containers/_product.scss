@@ -1,30 +1,23 @@
 /**
  * Product detail page
- * @stylesheet
  *
- * @description The product detail page container, include image galley and feature tabs
+ * The product detail page container, include image galley and feature tabs
  */
 
 /**
- * Product container
- * @style
- * @description The outer most container for the product detail page
+ * The outer most container for the product detail page
  */
 .product-container {
     // e.g. set background colour
 
     /**
-     * Product container portrait
-     * @style
-     * @description Inner container for product detail, container product details and checkout button
+     * Inner container for product detail, container product details and checkout button
      */
     .product-container-portrait {
         // e.g. Set some flexbox options
 
         /**
-         * Product content
-         * @style
-         * @description Contains the product details include, title, price, gallery and description but not he checkout button
+         * Contains the product details include, title, price, gallery and description but not he checkout button
          */
         .product-content {
             // e.g. set some padding
@@ -35,16 +28,12 @@
             }
 
             /**
-             * Product content title
-             * @style
-             * @description Wrapper container for the product name
+             * Wrapper container for the product name
              */
             .product-content-title {
 
                 /**
-                 * Product name
-                 * @style
-                 * @description A div containing the product name
+                 * A div containing the product name
                  */
                 .product-name {
                     // e.g. set a font size or colour
@@ -52,24 +41,18 @@
                 }
 
                 /**
-                 * Product rating
-                 * @style
-                 * @description Contains five star ratings if enabled
+                 * Contains five star ratings if enabled
                  */
                 .product-rating {
                     // e.g. Set line height and colour
 
                     /**
-                     * Rating container
-                     * @style
-                     * @description Wrapper container or the star ratings
+                     * Wrapper container or the star ratings
                      */
                     .rating-container {
 
                         /**
-                         * Rating base
-                         * @style
-                         * @description The inactive stars
+                         * The inactive stars
                          */
                         .rating-base {
                             // e.g. set a inactive colour
@@ -77,9 +60,7 @@
                         }
 
                         /**
-                         * Rating cover
-                         * @style
-                         * @description The actual star rating
+                         * The actual star rating
                          */
                         .rating-cover {
                             // e.g. set a highlight colour
@@ -89,17 +70,13 @@
                 }
 
                 /**
-                 * Product price container
-                 * @style
-                 * @description Container for the the product price, includes current price and previous price where available
+                 * Container for the the product price, includes current price and previous price where available
                  */
                 .product-price-container {
                     // e.g. set some padding
 
                     /**
-                     * Product price
-                     * @style
-                     * @description Container for the the product price
+                     * Container for the the product price
                      */
                     .product-price {
                         // e.g. set a font size and colour
@@ -118,9 +95,7 @@
                 }
 
                 /**
-                 * Product SKU
-                 * @style
-                 * @description Contains the SKU number
+                 * Contains the SKU number
                  */
                 .product-sku {
                     // e.g. set display: none to hide
@@ -133,25 +108,19 @@
                 }
 
                 /**
-                 * Gallery container
-                 * @style
-                 * @description Container image gallery, contains image, navigation, pagination and previews
+                 * Container image gallery, contains image, navigation, pagination and previews
                  */
                 .gallery-container {
                     // e.g. set some padding
 
                     /**
-                     * Gallery navigation
-                     * @style
-                     * @description Container for the next and previous buttons
+                     * Container for the next and previous buttons
                      */
                     .gallery-navigation {
                         // e.g. set some padding
 
                         /**
-                         * Gallery btn prev
-                         * @style
-                         * @description Links to the previous image
+                         * Links to the previous image
                          */
                         .gallery-btn-prev {
                             // e.g. set a colour and icon font famiy
@@ -164,9 +133,7 @@
                         }
 
                         /**
-                         * Gallery btn next
-                         * @style
-                         * @description Links to the next image
+                         * Links to the next image
                          */
                         .gallery-btn-next {
                             // e.g. set a colour and icon font famiy
@@ -180,17 +147,13 @@
                     }
 
                     /**
-                     * Gallery images
-                     * @style
-                     * @description Container for the gallery images
+                     * Container for the gallery images
                      */
                     .gallery-images {
                         // e.g. set position
 
                         /**
-                         * Gallery items
-                         * @style
-                         * @description Contains child div's with background images
+                         * Contains child div's with background images
                          */
                         .gallery-items {
                             // e.g. set a height for the container
@@ -204,9 +167,7 @@
                     }
 
                     /**
-                     * Gallery previews
-                     * @style
-                     * @description Contains child divs with background images (thumbnails)
+                     * Contains child divs with background images (thumbnails)
                      */
                     .gallery-previews {
                         // e.g. display: block; to show previews
@@ -214,12 +175,13 @@
                     }
 
                     /**
-                     * Gallery pagination
-                     * @style
-                     * @description Contains child divs with background images (thumbnails)
+                     * Contains child divs with background images (thumbnails)
                      */
                     .gallery-pagination {
 
+                        /**
+                         * Button which links to a corresponding product gallery image
+                         */
                         .pagination-item {
                             // e.g. change the icon font family or colour
 
@@ -231,8 +193,17 @@
                 }
             }
 
+            /**
+             * Outer container for the tab component
+             */
             .tab-container {
+
+                /**
+                 * Outer container for the tab component
+                 */
                 .tabs {
+                    // e.g. set flexbox options or border
+
                     label {
 
                     }

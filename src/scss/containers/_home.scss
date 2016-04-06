@@ -1,22 +1,17 @@
 /**
  * Home page
- * @stylesheet
  *
- * @description The default page shown when the theme first loads. Includes outer container and call to action button.
- * @link https://github.com/foyerlive/transact-theme-example/blob/master/doc/containers/home.md
+ * The default page shown when the theme first loads. Includes outer container and call to action button.
+ * See https://github.com/foyerlive/transact-theme-example/blob/master/doc/containers/home.md
  */
 
 /**
- * Home Container
- * @style
- * @description The outer container of the homepage.
+ * The outer container of the homepage.
  */
 .home-container {
 
     /**
-     * Start Button
-     * @style
-     * @description The main call to action on the home page. Links to product listing.
+     * The main call to action on the home page. Links to product listing.
      */
     .button-find {
         // e.g. Set a colors and font size
