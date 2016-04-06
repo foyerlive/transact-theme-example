@@ -1,0 +1,12 @@
+.header-component {
+    margin-top: calc(1rem / 18 * 300);
+    &:before {
+        width: 100%;
+        content: " ";
+        background-image: url(../assets/images/examples/animatedheader/carousel.gif);
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        padding-top: calc(1rem / 18 * 300);
+    }
+}
