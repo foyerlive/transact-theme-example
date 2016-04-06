@@ -1,13 +1,27 @@
-/**
- * Base theme layout
- */
+/**********************************************************
+EXAMPLE THEMES
+**********************************************************/
 
 /**
- * Example Themes
- *
- * Turning themes off will revert layout back to bare bones
+ * Turning themes off will revert the layout back to bare bones
  */
 @import 'examples/basic/index'; // Basic (default)
+
+
+/**
+ * TODO: These advanced examples need a new home..
+ */
+//@import 'examples/animatedbanner/index'; // Animated Banner above header
+//@import 'examples/fatfooter/index'; // Having fat footer
+
+// Advanced
+//@import 'examples/advancedpathway/index'; // Add category image to top of page
+//@import 'examples/advanced/category-list/index'; // Add category image to top of page
+
+
+/********************************************************** 
+USE THE FOLLOWING FILES TO CREATE YOUR OWN THEME
+**********************************************************/
 
 /**
  * Components
@@ -44,16 +58,6 @@
 @import 'containers/cms/techPage';
 
 
-
-/**
- * TODO: These advanced examples need a new home..
- */
-//@import 'examples/animatedbanner/index'; // Animated Banner above header
-//@import 'examples/fatfooter/index'; // Having fat footer
-
-// Advanced
-//@import 'examples/advancedpathway/index'; // Add category image to top of page
-//@import 'examples/advanced/category-list/index'; // Add category image to top of page
 
 
 
