@@ -1,23 +1,40 @@
-/*==========================================================================
-   Product list page
-==========================================================================*/
+/**
+ * Product list page
+ */
+
+$product-list-container-background-color: $background-color-default !default;
+$product-list-pathway-filter-background-color: $background-color-light !default;
+$product-list-pathway-filter-font-color: $font-color-default !default;
+$product-rating-color-base: $background-color-light !default;
+$product-rating-color-cover: $color-highlight !default;
 
 .pathway-container {
 
-    // --------- Product category tabs --------- //
-
+    /**
+     *Product category tabs
+     */
     .pathway-container-buttons-products {
-        .pathway-filter-item {
-            background-color: $background-color-light;
+        display: none;
 
-            &.pathway-button-active {
-                background-color: $background-color-default;
+        @if $enable-product-list-filters == 1  {
+            display: flex;
+        }
+
+        .pathway-filter-item {
+            .pathway-filter-item {
+                background-color: $product-list-pathway-filter-background-color;
+                color: $product-list-pathway-filter-font-color;
+
+                &.pathway-button-active {
+                    background-color: $background-color-default;
+                }
             }
         }
     }
 
-    // --------- Product list --------- //
-
+    /**
+     * Product list
+     */
     .pathway-products-container {
         .product-list-container {
             background-color: $product-list-container-background-color;

@@ -25,7 +25,6 @@
   //max-height: 42%;
 }
 
-$background-color-help: $color-highlight !default;
 
 .help-close-button {
   text-transform: uppercase;
@@ -34,5 +33,4 @@ $background-color-help: $color-highlight !default;
   text-align: center;
   color: white;
   padding: 1rem;
-  background-color: $background-color-help;
 }

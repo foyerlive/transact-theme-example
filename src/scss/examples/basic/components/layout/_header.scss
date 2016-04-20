@@ -4,6 +4,8 @@
  * The header component is found at the top of every page, and contains a logo, back button and search button.
  */
 
+$background-color-header: $background-color-dark !default; /// Change the background color...
+
 .header-component {
     height: calc(1rem / 18 * 124);
     min-height: calc(1rem / 18 * 124);
@@ -21,7 +23,6 @@
     /**
     * Stylise the back and search buttons
     */
-
     .button {
         padding-left: 3rem;
         padding-right: 3rem;
