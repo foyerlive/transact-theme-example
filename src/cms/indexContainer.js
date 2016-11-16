@@ -2,9 +2,25 @@ const indexContainerStructure = {
   children: [
     {
       node: 'header',
-      children: [
-        'back',
-        'search'
+      children:[
+        {
+          className: 'header-wrapper',
+          children: [
+            {
+              className: 'header-left',
+              children: [
+                'back',
+              ]
+            },
+            {
+              className: 'header-right',
+              children: [
+                'search',
+                'cartButton'
+              ]
+            }
+          ]
+        }
       ]
     },
     'content',

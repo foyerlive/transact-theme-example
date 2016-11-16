@@ -1,0 +1,11 @@
+.keyboard-container {
+    .keyboard-wrapper {
+        .keyboard-row {
+            .key {
+              background-color: white;
+              color: #333;
+              border: calc( 1rem / 18 ) solid $background-color-dark;
+            }
+        }
+    }
+}

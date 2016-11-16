@@ -1,0 +1,97 @@
+/*==========================================================================
+   Product checkout container
+==========================================================================*/
+
+.order-container {
+  border-top: 1px solid $background-color-dark;
+}
+.product-checkout-container {
+  border-top: 1px solid $background-color-dark;
+  padding: calc(1rem / 18 * 30);
+  background-color: white;
+
+
+  .selectors-container {
+    background-color: transparent;
+
+    .selector-node {
+      margin-bottom: 1rem;
+
+      .selector-container {
+        .selector-label {
+          font-size: calc(1rem / 18 * 30);
+          line-height: calc(1rem / 18 * 60);
+        }
+
+        .selector-option {
+          text-transform: uppercase;
+          //color: white;
+          background-color: transparent;
+          border: 1px solid $background-color-dark;
+          font-size: calc(1rem / 18 * 30);
+          font-weight: normal;
+          line-height: calc(1rem / 18 * 60);
+          padding: calc(1rem / 18 * 15);
+          //border-radius: calc(1rem / 18 * 5);
+
+          &.selector-option-active {
+            color: $color-highlight;
+            border-color: $color-highlight;
+          }
+
+          &.selector-option-disabled {
+            color: $color-light;
+          }
+        }
+      }
+    }
+  }
+
+  .checkout-message {
+    padding: calc(1rem / 18 * 20);
+  }
+
+  .continue {
+    .button {
+      @extend .cta-button;
+      //background-color: $color-highlight;
+      //color: white;
+      text-transform: uppercase;
+      font-size: calc(1rem / 18 * 35);
+      font-weight: normal;
+      //border-radius: calc(1rem / 18 * 5);
+      padding: calc(1rem / 18 * 45);
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      position: relative;
+
+      &.disabled {
+        border: 1px solid $background-color-light;
+        color: $background-color-light;
+        //color: white;
+        //background-color: $color-light;
+      }
+    }
+
+    &.continue-configure {
+      .button {
+        @extend .cta-button;
+        &.disabled {
+          &:after {
+            position: absolute;
+            font-size: calc(1rem / 18 * 20);
+            font-style: italic;
+            left: 0;
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            text-transform: none;
+            content: '(Select options above to continue)'
+          }
+        }
+      }
+    }
+  }
+}

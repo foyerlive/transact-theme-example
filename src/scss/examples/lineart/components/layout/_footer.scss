@@ -1,0 +1,59 @@
+$background-color-footer: $background-color-dark !default; /// Change the background footer background color...
+
+.footer-component {
+  border-top: 1px solid $background-color-footer;
+  color: black;
+  padding: calc(1rem / 18 * 30) 0; ///  Adjust the height of the footer.
+
+  .footer-wrapper {
+    font-size: calc(1rem / 18 * 20);
+    padding-left: calc(1rem / 18 * 10);
+    padding-right: calc(1rem / 18 * 10);
+    display: flex;
+    flex-grow: 1;
+    flex-flow: row;
+    justify-content: space-between;
+
+    .footer-left {
+      padding-left: 0.75rem;
+      display: flex;
+
+      .button {
+        color: $font-color-body;
+        border: 1px solid $background-color-dark;
+        padding: 0.5rem;
+        &:after {
+          display: none;
+        }
+        border-left: 0px;
+        &:first-child {
+          border-left: 1px solid $background-color-dark;
+        }
+      }
+
+      .breadcrumbs-container {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .footer-right {
+      padding-right: 0.75rem;
+      display: flex;
+      align-items: center;
+
+      .button-help {
+        color: $font-color-body;
+        border: 1px solid $background-color-dark;
+        padding: 0.5rem;
+        &:before {
+          content: 'Need ';
+        }
+
+        &:after {
+          content: '?';
+        }
+      }
+    }
+  }
+}

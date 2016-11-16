@@ -1,0 +1,37 @@
+/**
+ * Basic theme
+ */
+
+// Settings
+@import './variables';
+@import './fonts';
+
+/**
+ * Components
+ */
+@import './components/gallery';
+//@import './components/inlineFilters';
+@import './components/layout/footer';
+@import './components/layout/header';
+//@import './components/layout/help';
+@import './components/util/button';
+@import './components/util/rating';
+
+@import './containers/index'; // Index container
+@import './containers/home'; // Home page
+
+// Category page
+@import './containers/pathway';
+
+// Product list page
+@import './containers/productList';
+
+// Product detail page
+@import './containers/product';
+@import './components/layout/tabs';
+@import './components/util/keypad';
+@import './containers/productConfigure';
+
+// Search page
+@import './containers/cms/search';
+@import './components/util/keyboard';

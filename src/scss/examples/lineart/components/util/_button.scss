@@ -1,0 +1,13 @@
+.cta-button {
+  text-align: center;
+  padding: calc(1rem / 18 * 45);
+  color: white;
+  text-transform: uppercase;
+  font-size: calc(1rem / 18 * 40);
+  background-color: $color-highlight;
+  //border-radius: calc(1rem / 18 * 5);
+
+  background-color: transparent;
+  border: 1px solid $color-highlight;
+  color: $color-highlight;
+}

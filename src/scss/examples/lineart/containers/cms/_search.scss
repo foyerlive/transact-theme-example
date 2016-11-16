@@ -1,0 +1,15 @@
+.search-container {
+  .search-interface {
+    border-top: 1px solid $background-color-dark;
+    background-color: white;
+
+    input {
+      background-color: white;
+      border: 1px solid $background-color-dark;
+    }
+
+    .search-input-toggle {
+      color: $background-color-dark;
+    }
+  }
+}

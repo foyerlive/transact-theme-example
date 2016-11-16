@@ -5,7 +5,8 @@ EXAMPLE THEMES
 /**
  * Turning themes off will revert the layout back to bare bones
  */
-@import 'examples/basic/index'; // Basic (default)
+//@import 'examples/basic/index'; // Basic (default)
+@import 'examples/lineart/index'; // Basic (default)
 
 
 /**
@@ -19,7 +20,7 @@ EXAMPLE THEMES
 //@import 'examples/advanced/category-list/index'; // Add category image to top of page
 
 
-/********************************************************** 
+/**********************************************************
 USE THE FOLLOWING FILES TO CREATE YOUR OWN THEME
 **********************************************************/
 
@@ -31,15 +32,15 @@ USE THE FOLLOWING FILES TO CREATE YOUR OWN THEME
 //@import 'components/gallery';
 //@import 'components/inlineFilters';
 //@import 'components/layout/footer';
-//@import 'components/layout/header';
+@import 'components/layout/header';
 //@import 'components/layout/help';
 //@import 'components/util/button';
 
 /**
  * Containers
  *
- * Each page lives in it's own container. As a starting point the structure of each page has been documented, so that you can immediately begin creating your
- * own theme.
+ * Each page lives in it's own container. As a starting point the structure of each page has been documented, so that
+ * you can immediately begin creating your own theme.
  * see https://github.com/foyerlive/transact-theme-example/blob/master/doc/index.md#containers
  */
 @import 'containers/index'; // Index container

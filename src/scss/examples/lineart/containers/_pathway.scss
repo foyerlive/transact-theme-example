@@ -1,0 +1,31 @@
+/*==========================================================================
+   Pathway container
+
+   # Category and sub-category pages
+==========================================================================*/
+
+.pathway-container {
+
+    /**
+     * Category Title
+     */
+    .pathway-filter-title- {
+        display: block;
+    }
+
+    .pathway-container-buttons-buttonlist {
+        padding: 0 calc(1rem / 18 * 50) calc(1rem / 18 * 50);
+
+        .pathway-filter-item {
+            flex-basis: 100%;
+            margin-top: calc(1rem / 18 * 30);
+            padding: calc(1rem / 18 * 40);
+            border: 1px solid $background-color-dark;
+            //border-radius: calc(1rem / 18 * 5);
+            color: $font-color-body;
+            font-size: calc(1rem / 18 * 40);
+            text-align: center;
+        }
+    }
+}
+

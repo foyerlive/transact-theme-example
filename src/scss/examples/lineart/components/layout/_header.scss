@@ -1,0 +1,54 @@
+/**
+ * Header Component
+ *
+ * The header component is found at the top of every page, and contains a logo, back button and search button.
+ */
+
+$background-color-header: $background-color-dark !default; /// Change the background color...
+
+.header-component {
+    height: calc(1rem / 18 * 124);
+    min-height: calc(1rem / 18 * 124);
+    border-bottom: 1px solid $background-color-header;
+    color: black;
+    text-transform: uppercase;
+    font-size: calc(1rem / 18 * 32);
+
+    // Add the logo
+    background-image: url('../assets/images/foyerlive_black.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 45%;
+
+    /**
+    * Stylise the back and search buttons
+    */
+    .button {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        color: #333;
+        // Center the text vertically...
+        display: flex;
+        align-items: center;
+    }
+
+    .button-back {
+          &:before {
+            margin-bottom: calc( 1rem / 18 * 2 );
+            font-size: calc( 1rem / 18 * 40 );
+            font-weight: normal;
+            font-family: FontAwesome;
+            content: '\f104';
+            padding-right: calc( 1rem / 18 * 20 );
+        }
+    }
+
+    .button-search {
+        &:before {
+            margin-bottom: calc( 1rem / 18 * 2 );
+            font-family: 'simple-line-icons';
+            content: '\e090';
+            padding-right: calc( 1rem / 18 * 20 );
+        }
+    }
+}

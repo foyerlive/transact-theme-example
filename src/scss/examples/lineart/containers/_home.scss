@@ -1,0 +1,32 @@
+/**
+ * Home screen
+ */
+
+$home-button-background-color: $color-highlight !default;
+$home-button-font-color: $font-color-alt !default;
+
+.home-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: calc(1rem / 18 * 80);
+
+  h1 {
+    font-size: calc(1rem / 18 * 100);
+  }
+
+  p {
+    font-size: calc(1rem / 18 * 50);
+    line-height: calc(1rem / 18 * 70);
+    color: $font-color-body;
+  }
+
+  .button-find {
+    @extend .cta-button;
+    margin-top: calc(1rem / 18 * 100);
+    //border: 1px solid $home-button-background-color;
+    //background-color: transparent;
+    //color: $home-button-font-color;
+    //color: $home-button-background-color;
+  }
+}

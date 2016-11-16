@@ -1,0 +1,28 @@
+/**
+ * Product ratings
+ */
+
+$product-rating-color-base: $background-color-light !default;
+$product-rating-color-cover: $color-highlight !default;
+
+.product-rating {
+  display: none;
+
+  @if $enable-product-rating == 1  {
+    display: block;
+  }
+
+  padding-top: calc(1rem / 18 * 20);
+  font-size: calc(1rem / 18 * 20);
+
+  .rating-base {
+    color: $product-rating-color-base;
+  }
+
+  .rating-cover {
+    color: $product-rating-color-cover;
+  }
+}
+
+// --------- Product detail --------- //
+

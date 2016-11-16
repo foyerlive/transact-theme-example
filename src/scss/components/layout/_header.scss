@@ -3,12 +3,50 @@
 ==========================================================================*/
 
 .header-component {
+  // --------- Back & Search button styling --------- //
 
-    // --------- Back & Search button styling --------- //
+  .button {
+  }
 
-    .button { }
+  .button-back {
+  }
 
-    .button-back { }
+  .button-search {
+  }
+}
 
-    .button-search { }
+.header-wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+
+  .header-left {
+    display: flex;
+  }
+
+  .header-right {
+    display: flex;
+    flex-direction: row;
+
+    .button {
+      padding-left: 0;
+    }
+
+    .cart-button {
+      &:before {
+        font-family: 'simple-line-icons';
+        content: '\e04e';
+        margin-bottom: calc( 1rem / 18 * 2);
+        padding-right: calc( 1rem / 18 * 20);
+      }
+      &.cart-button-loaded {
+        &:before {
+          content: '\e04d';
+        }
+      }
+    }
+
+  }
+
 }

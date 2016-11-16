@@ -3,13 +3,9 @@
   "version": "1.0.1",
   "description": "Example theme for FoyerLive transact application",
   "scripts": {
-    "clean": "rimraf dist",
-    "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
-    "build": "npm run clean && npm run build:webpack",
-    "start": "node devServer.js",
-    "lint": "eslint ./src",
-    "publish": "node publish.js",
-    "newpub": "fl-cli --publish"
+    "start": "fl-cli --start --port 9082 --theme",
+    "build": "fl-cli --build --theme",
+    "publish": "fl-cli --publish --env=test"
   },
   "repository": {
     "type": "git",
