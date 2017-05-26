@@ -5,7 +5,8 @@ class Renderer extends Component
 {
   render()
   {
-    const {attributes} = this.props.product;
+    const Product = this.props.product || this.props['data-rdl'].product; // Compatible with new RDL
+    const {attributes} = Product;
     let nodes = Object.keys( attributes ).map( (key) => {
       let label;
       switch( key )
@@ -37,8 +38,9 @@ class Renderer extends Component
 class Tabs extends Component
 {
   render() {
-    const Product = this.props.product;
-
+    const Product = this.props.product || this.props['data-rdl'].product; // Compatible with new RDL
+    const sizing = Product.sizingchart || _.get( Product, 'attributes.fitContent', 'No sizing information available...' );
+    const care = Product.care || _.get( Product, 'attributes.careContent', 'No care information available...' );
     return (
       <div className="tab-container">
         <div className="tabs">
@@ -48,11 +50,11 @@ class Tabs extends Component
 
           <input id="tab-two" type="radio" name="grp" />
           <label htmlFor="tab-two">Sizing</label>
-          <div className="tab-content" dangerouslySetInnerHTML={{__html:Product.sizingchart}}></div>
+          <div className="tab-content" dangerouslySetInnerHTML={{__html:sizing}}></div>
 
           <input id="tab-three" type="radio" name="grp" />
           <label htmlFor="tab-three">Care</label>
-          <div className="tab-content" dangerouslySetInnerHTML={{__html:Product.care}}></div>
+          <div className="tab-content" dangerouslySetInnerHTML={{__html:care}}></div>
         </div>
       </div>
     )

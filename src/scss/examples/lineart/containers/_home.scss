@@ -21,9 +21,9 @@ $home-button-font-color: $font-color-alt !default;
     color: $font-color-body;
   }
 
-  .button-find {
+  .button-find, .button-browse {
     @extend .cta-button;
-    margin-top: calc(1rem / 18 * 100);
+    margin-top: calc(1rem / 18 * 20);
     //border: 1px solid $home-button-background-color;
     //background-color: transparent;
     //color: $home-button-font-color;
