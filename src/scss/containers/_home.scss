@@ -10,11 +10,17 @@
  */
 .home-container {
 
+    padding: 0;
+    justify-content: flex-start;
     /**
      * The main call to action on the home page. Links to product listing.
      * e.g. set position, color and font size
      */
     .button-find {
 
+    }
+
+    .panel {
+        padding: 3rem;
     }
 }
