@@ -1,0 +1,42 @@
+$category-list-columns: 2 !default;
+$category-list-columns-large: 2;
+$category-list-margin: 1rem;
+.category-buttons-container {
+  .category-button {
+    // Split to two columns...
+    box-sizing: border-box;
+    flex-basis: calc(100% / #{$category-list-columns} - #{$category-list-margin} * #{$category-list-columns + 1} / #{$category-list-columns});
+    margin: $category-list-margin 0 0 $category-list-margin;
+
+    border: 1px solid black;
+    border-radius: 0.5rem;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem 0.5rem;
+
+    &.Tappable-active, &:active, &:focus { // Use the active state to give touch feedback to the user.
+      border: 1px solid $color-highlight;
+      position: relative;
+      &:after {
+        animation: fa-spin 2s infinite linear;
+        color: $color-highlight;
+        font-family: FontAwesome;
+        font-size: 3rem;
+        content: '\f1ce';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

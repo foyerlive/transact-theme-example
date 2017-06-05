@@ -45,7 +45,8 @@ USE THE FOLLOWING FILES TO CREATE YOUR OWN THEME
  */
 @import 'containers/index'; // Index container
 @import 'containers/home'; // Home page
-@import 'containers/pathway'; // Category page
+@import 'containers/pathway'; // Filter navigation flow
+@import 'containers/category'; // Category navigation flow
 @import 'containers/productList'; // Product listing page
 @import 'containers/product'; // Product detail page
 @import 'containers/search'; // Search page

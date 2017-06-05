@@ -21,14 +21,19 @@
      * Container for product categories buttons
      * e.g. Set some padding or flexbox options
      */
+    $buttonCols: 2; // Number of columns
+    $buttonMarginAmount: 1rem; // This value is the distance between each item and around the items..
     .pathway-container-buttons-buttonlist {
-
         /**
          * Individual category item. Links to a list of products.
          * e.g. Set a background colour and font size
          */
         .pathway-filter-item {
-
+            border: 1px solid black;
+            box-sizing: border-box;
+            margin-left: $buttonMarginAmount;
+            margin-top: $buttonMarginAmount;
+            flex-basis: calc(100% / #{$buttonCols} - #{$buttonMarginAmount} * #{$buttonCols + 1} / #{$buttonCols});
         }
 
     }

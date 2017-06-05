@@ -61,8 +61,8 @@
        */
       .product-list-item {
 
-        border: 1px solid black;
-        flex-basis: calc( 100% / #{$cols} - #{$marginAmount} * #{$cols + 1} / #{$cols} );
+        //border: 1px solid black;
+        flex-basis: calc(100% / #{$cols} - #{$marginAmount} * #{$cols + 1} / #{$cols});
         margin-left: $marginAmount;
         margin-bottom: $marginAmount;
 
